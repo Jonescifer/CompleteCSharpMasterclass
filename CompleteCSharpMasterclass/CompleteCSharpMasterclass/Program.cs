@@ -6,33 +6,37 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a number! ");
-            string userInput = Console.ReadLine();
+            int num1 = 5;
+            int num2 = 0;
+            int result;
 
             try
             {
-                int userInputAsInt = Int16.Parse(userInput);
-            }
-            catch (FormatException e1)
-            {
-                Console.WriteLine("FormatException!!!!! {0}", e1);
-            }
-            catch (OverflowException e2)
-            {
-                Console.WriteLine("OverflowException number too long or short!!!!! {0}", e2);
-            }
+                float devidedNumber = num1 / num2;
+                Console.WriteLine(devidedNumber);
 
-            catch (ArgumentNullException e3)
+            }
+            catch (FormatException)
             {
-                Console.WriteLine("Argument NULL exception {0}", e3);
+                Console.WriteLine("FormatException!!!!!");
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("OverflowException number too long or short!!!!!");
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("cant devide by zero!");
+                throw;
+                
+               
             }
             finally
             {
                 Console.WriteLine("this is called anyways");
             }
-
-            Console.ReadKey();
-
+            
         }
+        
     }
 }
