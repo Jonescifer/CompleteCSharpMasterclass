@@ -6,44 +6,45 @@ namespace OperatorsC
     {
         public static void Main(string[] args)
         {
-            CheckTemperature(AskUser());
-        }
-
-        static int AskUser()
-        {
-            Console.WriteLine("please enter temperature outside!");
-            string userInput = Console.ReadLine();
-            int trueNumber;
-            if(int.TryParse(userInput,out trueNumber))
+            
+            string newUsername = "";
+            string newPassword = "";
+            string username = "";
+            string password = "";
+            
+            
+            Console.WriteLine("Registration screen.");
+            Console.WriteLine("Enter new Username: ");
+            newUsername = Console.ReadLine();
+            Console.WriteLine("Enter new Password: ");
+            newPassword = Console.ReadLine();
+            
+            if (newUsername == "" || newPassword == "")
             {
-                return trueNumber;
+                Console.WriteLine("username or password cant be empty!");
             }
             else
             {
-                trueNumber = 0;
-                Console.WriteLine("You are stupid - enter only numbers");
-                return trueNumber;
-            }
-            
-        }
-        
-        static void CheckTemperature(int trueNumber)
-        {
-            
-            if (trueNumber < 20)
-            {
-                Console.WriteLine("{0}, Stay home", trueNumber);
-            }
-            else if (trueNumber == 20)
-            {
-                Console.WriteLine("{0}, Put coat and go outside", trueNumber);
-            }
-            else
-            {
-                Console.WriteLine("{0}, Go to the Beach", trueNumber);
-            }
+                Console.WriteLine("Login screen. ");
+                Console.WriteLine("Enter Username: ");
+                username = Console.ReadLine();
+                Console.WriteLine("Enter Password: ");
+                password = Console.ReadLine();
                 
+                if (username == "" || password == "")
+                {
+                    Console.WriteLine("username or password cant be empty!");
+                }
+                else if (username == newUsername && password == newPassword)
+                {
+                    Console.WriteLine("welcome {0}", username);
+                }
+                else
+                {
+                    Console.WriteLine("Wrong username/password combination, you are an idiot stimpy!");
+                }
+            }
+            
         }
-        
     }
 }
