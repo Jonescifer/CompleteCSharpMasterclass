@@ -6,30 +6,41 @@ namespace OperatorsC
     {
         public static void Main(string[] args)
         {
-            CheckTemperture(AskUser());
+            CheckTemperature(AskUser());
         }
 
         static int AskUser()
         {
             Console.WriteLine("please enter temperature outside!");
-            int inputTemperature = int.Parse(Console.ReadLine());
-            return inputTemperature;
-        }
-        
-        static void CheckTemperture(int temperture)
-        {
-            
-            if (temperture < 20)
+            string userInput = Console.ReadLine();
+            int trueNumber;
+            if(int.TryParse(userInput,out trueNumber))
             {
-                Console.WriteLine("stay home");
-            }
-            else if (temperture == 20)
-            {
-                Console.WriteLine("put coat and go outside");
+                return trueNumber;
             }
             else
             {
-                Console.WriteLine("Go to the Beach");
+                trueNumber = 0;
+                Console.WriteLine("You are stupid - enter only numbers");
+                return trueNumber;
+            }
+            
+        }
+        
+        static void CheckTemperature(int trueNumber)
+        {
+            
+            if (trueNumber < 20)
+            {
+                Console.WriteLine("{0}, Stay home", trueNumber);
+            }
+            else if (trueNumber == 20)
+            {
+                Console.WriteLine("{0}, Put coat and go outside", trueNumber);
+            }
+            else
+            {
+                Console.WriteLine("{0}, Go to the Beach", trueNumber);
             }
                 
         }
