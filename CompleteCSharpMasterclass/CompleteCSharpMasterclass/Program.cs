@@ -54,7 +54,9 @@ namespace OperatorsC
             if (username == Console.ReadLine())
             { 
                 Console.WriteLine("Enter Password: ");
-                if (password == Console.ReadLine()) { Console.WriteLine("welcome {0}", username);
+                if (password == Console.ReadLine()) 
+                { 
+                    Console.WriteLine("Login Successful {0}!", username);
                 }
                 else
                 { 
