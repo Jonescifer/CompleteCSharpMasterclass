@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{FE370C8F-F066-42BA-8D7A-5EDBF060687B}|Default">
+  <MonoDevelop.Ide.ItemProperties.CompleteCSharpMasterclass PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CompleteCSharpMasterclass/Program.cs">
+    <Files>
+      <File FileName="CompleteCSharpMasterclass/Program.cs" Line="35" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CompleteCSharpMasterclass" expanded="True">
+            <Node name="CompleteCSharpMasterclass" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

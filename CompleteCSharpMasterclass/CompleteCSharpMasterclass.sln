@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompleteCSharpMasterclass", "CompleteCSharpMasterclass\CompleteCSharpMasterclass.csproj", "{FE370C8F-F066-42BA-8D7A-5EDBF060687B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE370C8F-F066-42BA-8D7A-5EDBF060687B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{FE370C8F-F066-42BA-8D7A-5EDBF060687B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{FE370C8F-F066-42BA-8D7A-5EDBF060687B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{FE370C8F-F066-42BA-8D7A-5EDBF060687B}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
