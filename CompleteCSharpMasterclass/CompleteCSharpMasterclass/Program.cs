@@ -3,13 +3,11 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace OperatorsC
 {
-     class MainClass
+    class MainClass
     {
-        static string newUsername = "";
-        static string newPassword = "";
         static string username = "";
         static string password = "";
-        
+
         public static void Main(string[] args)
         {
             Register();
@@ -19,43 +17,56 @@ namespace OperatorsC
         {
             Console.WriteLine("Registration screen.");
             Console.WriteLine("Enter new Username: ");
-            newUsername = Console.ReadLine();
-            Console.WriteLine("Enter new Password: ");
-            newPassword = Console.ReadLine();
-            Console.WriteLine("Registration ended.");
-            Console.WriteLine("------------------------------------");
-
-            if (newUsername == "" || newPassword == "")
+            username = Console.ReadLine();
+            
+            //check username is not empty
+            if (username != "")
             {
-                Console.WriteLine("Failed to register: username or password cant be empty!");
+                Console.WriteLine("Enter new Password: ");
+                password = Console.ReadLine();
+                 
+                //check password is not empty
+                if (password != "")
+                {
+                    Console.WriteLine("Registration ended.");
+                    Console.WriteLine("------------------------------------");
+                    
+                    //run method Login
+                    Login();
+                }
+                else
+                {
+                    Console.WriteLine("Failed to register: password cant be empty!"); 
+                }
             }
             else
             {
-                Login();
+                Console.WriteLine("Failed to register: username cant be empty!");
             }
+            
         }
 
         public static void Login()
         {
             Console.WriteLine("Login screen. ");
             Console.WriteLine("Enter Username: ");
-            username = Console.ReadLine();
-            Console.WriteLine("Enter Password: ");
-            password = Console.ReadLine();
-                
-            if (username == "" || password == "")
-            {
-                Console.WriteLine("Failed to login: username or password cant be empty!");
+                        
+            if (username == Console.ReadLine())
+            { 
+                Console.WriteLine("Enter Password: ");
+                if (password == Console.ReadLine()) { Console.WriteLine("welcome {0}", username);
+                }
+                else
+                { 
+                    Console.WriteLine("Wrong password, you are an idiot stimpy!");
+                }
             }
-            else if (username == newUsername && password == newPassword)
-            {
-                Console.WriteLine("welcome {0}", username);
+            else 
+            { 
+                Console.WriteLine("Wrong username, you are an idiot stimpy!");
             }
-            else
-            {
-                Console.WriteLine("Wrong username/password combination, you are an idiot stimpy!");
-            }
-        }
 
+        }
     }
 }
+
