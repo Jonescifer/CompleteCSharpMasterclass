@@ -7,25 +7,26 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-
+            string userInput = "0";
+            int counterStudents = 0;
+            int currentInputNumber = 0;
+            int totalScore = 0;
             
-            //my take
-            int studentCounter = 0;
-            string enteredText = "";
             
-            while (enteredText.Equals (""))
+            
+            while (userInput != "-1")
             {
-                Console.WriteLine("press Enter to count");
-                enteredText = Console.ReadLine();
-                studentCounter++;
-                //been looking for this my whole life! wanted it to not say the last pressed Enter into the count and display it. it always showed 1 more!
-                if (enteredText.Equals (""))
+                Console.WriteLine("enter score: ");
+                userInput = Console.ReadLine();
+                bool isValid = int.TryParse(userInput, out  currentInputNumber);
+                if (isValid)
                 {
-                    Console.WriteLine("current student number is : {0}" , studentCounter);
+                    totalScore += currentInputNumber;
+                    counterStudents++;
                 }
-            } 
-            Console.Write((studentCounter -= 1) + " students entered");
-        } 
-           
+            }
+            Console.WriteLine("The average is: {0}", (totalScore / counterStudents) );
+        }
+        
     }
 }
