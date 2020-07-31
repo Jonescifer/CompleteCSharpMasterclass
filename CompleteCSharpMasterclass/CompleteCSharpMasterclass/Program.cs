@@ -15,12 +15,16 @@ namespace CompleteCSharpMasterclass
             
             while (enteredText.Equals (""))
             {
-                Console.WriteLine("press Enter");
+                Console.WriteLine("press Enter to count");
                 enteredText = Console.ReadLine();
                 studentCounter++;
-                Console.WriteLine("current student number is : {0}" , studentCounter);
+                //been looking for this my whole life! wanted it to not say the last pressed Enter into the count and display it. it always showed 1 more!
+                if (enteredText.Equals (""))
+                {
+                    Console.WriteLine("current student number is : {0}" , studentCounter);
+                }
             } 
-            Console.Write((studentCounter -= 1 ) + " students entered");
+            Console.Write((studentCounter -= 1) + " students entered");
         } 
            
     }
