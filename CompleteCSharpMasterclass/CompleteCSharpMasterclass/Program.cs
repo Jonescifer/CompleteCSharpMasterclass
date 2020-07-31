@@ -5,32 +5,31 @@ namespace CompleteCSharpMasterclass
 {
     class MainClass
     {
-        static int highScore = 20;
-        static string highScorePlayer = "Josh";
-       
         public static void Main(string[] args)
-        {
-            CheckHighScore(19,"Jones");
-            CheckHighScore(21,"Josh");
-        }
+       {
+          
+           Console.WriteLine("enter temperature:");
+           CheckTemperature(Console.ReadLine());
+           
+       }
 
-        static void CheckHighScore(int score, string playerName)
-        {
-            if (score > highScore)
-            {
-                 highScore = score;
-                 highScorePlayer = playerName;
-                 Console.WriteLine("New high score! High score is: {0}, by {1}", highScore,highScorePlayer);
-            }
-            else
-
-            {
-                Console.WriteLine("No new high score. High score is still: {0}, by {1}", highScore,highScorePlayer);
-                
-            }
-            
-        }
-
+       static void CheckTemperature(string temprerature )
+       {
+           string myBody;
+           
+           if(int.TryParse(temprerature, out int intTemperature))
+           {
+               myBody = intTemperature <= 15 ? "its to cold here" : intTemperature >= 16 && intTemperature <= 28  ? "its ok here" : "its to hot here";
+               Console.WriteLine("My Body is telling me that {0}!", myBody);     
+           }
+           else
+           {
+               Console.WriteLine("Not a valid temperature value, bianca.");           
+           }
+           
+       }
     }
 }
 
+  //stateOfMatter = temperature > 100 ? "gas" : temperature < 0 ? "solid" : "liquid";
+    //                  Console.WriteLine("state of matter is {0} ", stateOfMatter);
