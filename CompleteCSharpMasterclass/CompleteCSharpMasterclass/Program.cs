@@ -16,18 +16,31 @@ namespace CompleteCSharpMasterclass
             
             while (userInput != "-1")
             {
-                Console.WriteLine("enter score: ");
+                Console.WriteLine("enter score: (enter -1 to exit)");
                 userInput = Console.ReadLine();
-                bool isValid = int.TryParse(userInput, out  userInputInt) && (userInput != "-1");
-                if (isValid)
+                
+                //things that validate the input..
+                bool isValid = int.TryParse(userInput, out  userInputInt);
+                bool isInRange = userInputInt > 0 && userInputInt < 20;
+                bool isNotMinusOne = userInput != "-1";
+                
+                if (isValid && isInRange)
                 {
-                    totalScore += userInputInt;
+                    totalScore += userInputInt; 
                     counterStudents++;
-                    
                     //debug process
                     Console.WriteLine("user input was: " + userInput);
                     Console.WriteLine("total score is: " + totalScore);
                     Console.WriteLine("student counter is: " + counterStudents);
+                }
+                else if(isNotMinusOne && !isInRange)
+                {
+                    Console.WriteLine("number is not in range, or is a letter..");
+                }
+                else
+                {
+                    Console.WriteLine("You have exited");
+                    break;
                 }
             }
             //calculate and print Average.

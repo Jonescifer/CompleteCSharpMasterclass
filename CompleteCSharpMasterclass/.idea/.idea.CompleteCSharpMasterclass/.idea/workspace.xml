@@ -24,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
     </list>
@@ -104,7 +103,7 @@
       <workItem from="1596013186938" duration="17425000" />
       <workItem from="1596088677812" duration="2389000" />
       <workItem from="1596186775037" duration="16355000" />
-      <workItem from="1596267620401" duration="1491000" />
+      <workItem from="1596267620401" duration="2622000" />
     </task>
     <servers />
   </component>
