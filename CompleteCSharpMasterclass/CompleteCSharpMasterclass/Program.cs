@@ -9,7 +9,7 @@ namespace CompleteCSharpMasterclass
         {
             string userInput = "0";
             int counterStudents = 0;
-            int currentInputNumber = 0;
+            int userInputInt = 0;
             int totalScore = 0;
             
             
@@ -18,13 +18,19 @@ namespace CompleteCSharpMasterclass
             {
                 Console.WriteLine("enter score: ");
                 userInput = Console.ReadLine();
-                bool isValid = int.TryParse(userInput, out  currentInputNumber);
+                bool isValid = int.TryParse(userInput, out  userInputInt) && (userInput != "-1");
                 if (isValid)
                 {
-                    totalScore += currentInputNumber;
+                    totalScore += userInputInt;
                     counterStudents++;
+                    
+                    //debug process
+                    Console.WriteLine("user input was: " + userInput);
+                    Console.WriteLine("total score is: " + totalScore);
+                    Console.WriteLine("student counter is: " + counterStudents);
                 }
             }
+            //calculate and print Average.
             Console.WriteLine("The average is: {0}", (totalScore / counterStudents) );
         }
         
