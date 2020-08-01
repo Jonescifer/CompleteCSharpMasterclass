@@ -10,8 +10,11 @@ namespace CompleteCSharpMasterclass
         {
             // creat an instance of Class Human
             Human paul = new Human("Paul" , "Wolf", "Blue",41);
-            Human Reut = new Human("Reut" , "Mey-Raz" , "Brown",1);
-
+            Human maul = new Human("maul" , "rolf", "grey");
+            Human saul = new Human("saul" , "dolf");
+            Human laul = new Human("laul");
+            Human kaul = new Human("kaul" , "lolf",41);
+            Human defaulHuman = new Human();
             /*
             //access public variable and change it.
             paul.firstName = "Paul";
@@ -20,10 +23,13 @@ namespace CompleteCSharpMasterclass
             
             //call method of the Class
             paul.IntroduceMyself();
-            Reut.IntroduceMyself();
-           
-            
-            
+            maul.IntroduceMyself();
+            saul.IntroduceMyself();
+            laul.IntroduceMyself();
+            kaul.IntroduceMyself();
+
+
+
         }
     }
 }
