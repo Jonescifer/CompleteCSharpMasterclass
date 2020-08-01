@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.Eventing.Reader;
+using System.Runtime.Remoting.Messaging;
 
 namespace CompleteCSharpMasterclass
 {
@@ -7,47 +8,22 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            string userInput = "0";
-            int counterStudents = 0;
-            int userInputInt = 0;
-            int totalScore = 0;
+            // creat an instance of Class Human
+            Human paul = new Human("Paul" , "Wolf", "Blue",41);
+            Human Reut = new Human("Reut" , "Mey-Raz" , "Brown",1);
+
+            /*
+            //access public variable and change it.
+            paul.firstName = "Paul";
+            paul.lastName = "Wolf";
+            */
+            
+            //call method of the Class
+            paul.IntroduceMyself();
+            Reut.IntroduceMyself();
+           
             
             
-            
-            while (userInput != "-1")
-            {
-                Console.WriteLine("enter score: (enter -1 to exit)");
-                userInput = Console.ReadLine();
-                
-                //things that validate the input..
-                bool isValid = int.TryParse(userInput, out  userInputInt);
-                bool isInRange = userInputInt > 0 && userInputInt < 20;
-                bool isNotMinusOne = userInput != "-1";
-                
-                if (isValid && isInRange)
-                {
-                    totalScore += userInputInt; 
-                    counterStudents++;
-                    //debug process
-                    Console.WriteLine("user input was: " + userInput);
-                    Console.WriteLine("total score is: " + totalScore);
-                    Console.WriteLine("student counter is: " + counterStudents);
-                }
-                // i could separate this into two else ifs, or (|not recommended: nested if).. but im lazy. 
-                else if(isNotMinusOne && !isInRange)
-                {
-                    Console.WriteLine("number is not in range, or is a letter..");
-                }
-                else
-                {
-                    Console.WriteLine("You have exited");
-                    break;
-                }
-            }
-            //calculate and print Average.
-            double average = (double) totalScore / (double) counterStudents;
-            Console.WriteLine("The average is: {0}", average );
         }
-        
     }
 }
