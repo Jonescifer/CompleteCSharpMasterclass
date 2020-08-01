@@ -33,6 +33,7 @@ namespace CompleteCSharpMasterclass
                     Console.WriteLine("total score is: " + totalScore);
                     Console.WriteLine("student counter is: " + counterStudents);
                 }
+                // i could separate this into two else ifs, or (|not recommended: nested if).. but im lazy. 
                 else if(isNotMinusOne && !isInRange)
                 {
                     Console.WriteLine("number is not in range, or is a letter..");
@@ -44,7 +45,8 @@ namespace CompleteCSharpMasterclass
                 }
             }
             //calculate and print Average.
-            Console.WriteLine("The average is: {0}", (totalScore / counterStudents) );
+            double average = (double) totalScore / (double) counterStudents;
+            Console.WriteLine("The average is: {0}", average );
         }
         
     }
