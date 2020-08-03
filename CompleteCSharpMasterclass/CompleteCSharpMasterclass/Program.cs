@@ -8,7 +8,14 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            
+            Box box = new Box();
+
+            //box.length = 10;
+            //box.SetLength(1);
+            box.SetHeight(3);
+            box.SetWidth(5);
+            box.DisplayInfo();
+            Console.WriteLine("width is {0}", box.GetWidth());
         }
     }
 }
