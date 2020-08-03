@@ -12,10 +12,9 @@ namespace CompleteCSharpMasterclass
 
             //box.length = 10;
             //box.SetLength(1);
-            box.SetHeight(3);
+            box.Height = 2;
             box.SetWidth(5);
             box.DisplayInfo();
-            Console.WriteLine("width is {0}", box.GetWidth());
         }
     }
 }

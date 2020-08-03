@@ -5,18 +5,42 @@ namespace CompleteCSharpMasterclass
     public class Box
     {
         //member variables
-        private int length = 1;
-        private int height = 1;
-        private int width = 1;
+        private int length = 3;
+        private int height;
+        private int width;
         private int volume;
 
-        private void SetLength(int length)
+        public int Height
+        {
+            get
+            {
+                return height;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    height = -value;
+                }
+                else
+                {
+                    height = value;
+                }
+                
+            }
+        }
+
+        public void SetLength(int length)
         {
             this.length = length;
         }
         
         public void SetHeight(int height)
         {
+            if (height<0)
+            {
+                throw new Exception("must have numbers larger than 0");
+            }
             this.height = height;
         }
         
@@ -38,6 +62,11 @@ namespace CompleteCSharpMasterclass
         public int GetWidth()
         {
             return this.width;
+        }
+
+        public int GetVolume()
+        {
+            return this.height * this.length * this.width;
         }
         public void DisplayInfo()
         {
