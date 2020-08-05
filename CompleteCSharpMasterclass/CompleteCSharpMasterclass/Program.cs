@@ -8,13 +8,15 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            Box box = new Box();
-
-            //box.length = 10;
-            //box.SetLength(1);
-            box.Height = 2;
-            box.SetWidth(5);
+            Box boxDefault = new Box();
+            Box box = new Box(2,3,5);
             box.DisplayInfo();
+            Console.WriteLine("box Width is {0}", box.Width);
+            box.Width = 100;
+            Console.WriteLine("box Width is {0}", box.Width);
+            Console.WriteLine("box Volume is {0}", box.Volume);
+            Console.WriteLine("front surface is {0}" , box.FrontSurface);
+            
         }
     }
 }
