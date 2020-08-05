@@ -5,24 +5,24 @@ namespace CompleteCSharpMasterclass
     public class Box
     {
         //member variables
-        private int length;
-        private int height;
+        private int _length;
+        private int _height;
         //private int width;
-        private int volume;
+        private int _volume;
 
         public Box()
                 {
                     Console.WriteLine("A new default box was created!");
-                    length = 1;
+                    _length = 1;
                     Width = 1;
-                    height = 1;
+                    _height = 1;
                     Console.WriteLine("Volume is: {0}" , Volume);
                 }
 
         public Box (int height , int width , int length)
                 {
-                    this.length = length;
-                    this.height = height;
+                    this._length = length;
+                    this._height = height;
                     Width = width;
                 }
 
@@ -30,24 +30,24 @@ namespace CompleteCSharpMasterclass
         {
             get
             {
-                return Width * length;
+                return Width * _length;
             }
         }
         public int Height
         {
             get
             {
-                return height;
+                return _height;
             }
             set
             {
                 if (value < 0)
                 {
-                    height = -value;
+                    _height = -value;
                 }
                 else
                 {
-                    height = value;
+                    _height = value;
                 }
                 
             }
@@ -80,7 +80,7 @@ namespace CompleteCSharpMasterclass
         {
             get
             {
-                return this.Height*this.length*this.Width;
+                return this.Height*this._length*this.Width;
             }
             
         }
@@ -89,7 +89,7 @@ namespace CompleteCSharpMasterclass
 
             public void DisplayInfo()
         {
-            Console.WriteLine("Height {0} Width {1} Length {2} volume is {3}", Height, Width, length, Volume);
+            Console.WriteLine("Height {0} Width {1} Length {2} volume is {3}", Height, Width, _length, Volume);
         }
     }
 }
