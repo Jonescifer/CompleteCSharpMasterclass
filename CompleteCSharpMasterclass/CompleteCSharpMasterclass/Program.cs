@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.Eventing.Reader;
+using System.Net;
 using System.Runtime.Remoting.Messaging;
 
 namespace CompleteCSharpMasterclass
@@ -8,28 +9,40 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            //declare and initialize array of integers.
-            int[] grades = new int [5];
-            grades[0] = 1;
-            grades[1] = 20;
-            grades[2] = 2;
-            grades[3] = 5;
-            grades[4] = 18;
+            /*
+            int [] nums = new int [10];
 
-            Console.WriteLine("grades at index 2 is: {0}" , grades[2]);
-            
-            //assign value to aray at index 2
-            string input = Console.ReadLine();
-            grades[2] = int.Parse(input);
-            Console.WriteLine("grades at index 2 is: {0}" , grades[2]);
-            
-            //another way of initializing an array
-            int[] gradesOfMathStudentsA = { 1,5,7,13,18,10 };
-            
-            //third way of initializing an array
-            int[] gradesOfMathStudentsB = new int[]{5,6,3,18,19,1};
+            for (int i = 0 ; i < 10 ; i++)
+            {
+                nums[i] = i;
+            }
 
-            Console.WriteLine("legnth of MathStudentA array is {0}" , gradesOfMathStudentsA.Length);
+            for (int j = 0 ; j < nums.Length ; j++)
+            {
+               Console.WriteLine("array index {0} is {1}", j , nums[j] ); 
+            }
+
+            int counter = 0;
+            foreach (int k in nums)
+            {
+                Console.WriteLine("array index {0} is {1}" , counter , k );
+                counter++;
+            }
+            
+
+            string[] friends;
+            friends = new string [5] { "Joaquin" , "Gilboa" , "Yosi" , "Tuvia" , "Yocheved" };
+
+            foreach (string friendName in friends)
+            {
+                Console.WriteLine("greetings, {0}!" , friendName );
+            }
+            */
+            
+            
+            
+            
+            
         }
     }
 }
