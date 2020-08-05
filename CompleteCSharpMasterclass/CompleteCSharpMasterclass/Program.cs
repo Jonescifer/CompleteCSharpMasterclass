@@ -9,67 +9,37 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            string inputValue;
-            string inputValueType;
-            bool valid = false;
-            
-            Console.WriteLine("Enter value here: ");
-            inputValue = Console.ReadLine();
-            
-            Console.WriteLine("Select the Data type to validate the input you have entered.");
-            Console.WriteLine("Press 1 for String");
-            Console.WriteLine("Press 2 for Integer.");
-            Console.WriteLine("Press 3 for Boolean.");
-            
-            int inputType = Convert.ToInt32(Console.ReadLine());
-
-            switch (inputType)
+            int[,,] array3D =
             {
-                case 1:
-                    //check for string
-                    valid = IsValidString(inputValue);
-                    inputValueType = "String";
-                    break;
-                case 2:
-                    int returnValue = 0;
-                    //check for integer
-                    valid = int.TryParse(inputValue, out returnValue);
-                    inputValueType = "Integer";
-                    break;
-                case 3:
-                    bool returnFlag = false;
-                    //check for boolean
-                    valid = bool.TryParse(inputValue, out returnFlag);
-                    inputValueType = "Boolean";
-                    break;
-                default:
-                    inputValueType = "Unknown";
-                    Console.WriteLine("Unable to detect input type! ERROR!!!!!!!!!!!!");
-                    break;
-            }
-
-            Console.WriteLine("Inputted value is {0} ", inputValue);
-            if (valid)
-            {
-                Console.WriteLine("It's a valid {0}" , inputValueType);
-            }
-            else
-            {
-                Console.WriteLine("It's an invalid {0}" , inputValueType);
-            }
-
-
-
-            static bool IsValidString(string value)
-            {
-                foreach (char c in value)
-                { 
-                    if (!char.IsLetter(c)) 
-                        return false;
+                {
+                    {10,58},
+                    {27,74},
+                    {54,19}
+                },
+                {
+                    {5,59},
+                    {32,34},
+                    {89,62}
                 }
-                return true;
-            }
+            };
+
+            // Depth->Row->column
+            Console.WriteLine("value is: {0}", array3D[1,0,1]);
+
+            string[,] stringArray2D = 
+            {
+                {"one", "two"}, 
+                {"three", "four"}, 
+                {"five", "six"}
+            };
+            stringArray2D.SetValue("chicken",1,1);
+            Console.WriteLine("value is: {0}", stringArray2D[1,1]);
+            stringArray2D[1, 1] = "pickem";
+            Console.WriteLine("value is: {0}", stringArray2D[1,1]);
+            //rank returns dimensions number of array
+            Console.WriteLine("number of dimensions for array3D is {0}" , array3D.Rank );
         }
     }
 }
+
 
