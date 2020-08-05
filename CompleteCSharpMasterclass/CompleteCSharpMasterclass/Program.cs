@@ -9,40 +9,81 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            /*
-            int [] nums = new int [10];
-
-            for (int i = 0 ; i < 10 ; i++)
+            string firstInput;
+            string secondInput; 
+            int intFirstInput;
+            int intSecondInput;
+            string[] stringArray;
+            
+            Console.WriteLine("Enter value here: ");
+            firstInput = Console.ReadLine();
+            
+            Console.WriteLine("Select the Data type to validate the input you have entered.");
+            Console.WriteLine("Press 1 for String");
+            Console.WriteLine("Press 2 for Integer.");
+            Console.WriteLine("Press 3 for Boolean.");
+            
+            secondInput = Console.ReadLine();
+            
+            
+            
+            bool isValidInteger = int.TryParse(secondInput , out intSecondInput);
+            
+            switch (intSecondInput)
             {
-                nums[i] = i;
+                case 1:
+                {
+                    if (IsValidString(firstInput))
+                    {
+                        Console.WriteLine("You have entered a string value: {0}." , firstInput);
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine("You have entered an invalid string value: {0}." , firstInput);
+                     
+                    }
+                    break;
+                }
+                case 2:
+                {
+                    if (int.TryParse(firstInput , out intFirstInput))
+                    {
+                        Console.WriteLine("You have entered an integer: {0}." , firstInput);
+                    }
+                    Console.WriteLine("You have entered an invalid integer: {0}." , firstInput);
+                    break;
+                }
+                case 3:
+                {
+                    if (firstInput == secondInput)
+                    {
+                        Console.WriteLine("first string: {0}, second string {1}, Strings match!", firstInput , secondInput);
+                    }
+                    else
+                    {
+                        Console.WriteLine("first string: {0}, second string {1}, Strings don't match.", firstInput , secondInput);
+                    }
+                    break;
+                }
+                        
             }
 
-            for (int j = 0 ; j < nums.Length ; j++)
-            {
-               Console.WriteLine("array index {0} is {1}", j , nums[j] ); 
-            }
 
-            int counter = 0;
-            foreach (int k in nums)
-            {
-                Console.WriteLine("array index {0} is {1}" , counter , k );
-                counter++;
-            }
-            
 
-            string[] friends;
-            friends = new string [5] { "Joaquin" , "Gilboa" , "Yosi" , "Tuvia" , "Yocheved" };
-
-            foreach (string friendName in friends)
+            static bool IsValidString(string input)
             {
-                Console.WriteLine("greetings, {0}!" , friendName );
+                foreach (char c in input)
+                {
+                    if (char.IsNumber(c))
+                    {
+                        return false;
+                        break;
+                    }
+                }
+                return true;
             }
-            */
-            
-            
-            
-            
-            
         }
     }
 }
+
