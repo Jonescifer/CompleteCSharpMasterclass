@@ -9,77 +9,63 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            string firstInput;
-            string secondInput; 
-            int intFirstInput;
-            int intSecondInput;
-            string[] stringArray;
+            string inputValue;
+            string inputValueType;
+            bool valid = false;
             
             Console.WriteLine("Enter value here: ");
-            firstInput = Console.ReadLine();
+            inputValue = Console.ReadLine();
             
             Console.WriteLine("Select the Data type to validate the input you have entered.");
             Console.WriteLine("Press 1 for String");
             Console.WriteLine("Press 2 for Integer.");
             Console.WriteLine("Press 3 for Boolean.");
             
-            secondInput = Console.ReadLine();
-            
-            
-            
-            bool isValidInteger = int.TryParse(secondInput , out intSecondInput);
-            
-            switch (intSecondInput)
+            int inputType = Convert.ToInt32(Console.ReadLine());
+
+            switch (inputType)
             {
                 case 1:
-                {
-                    if (IsValidString(firstInput))
-                    {
-                        Console.WriteLine("You have entered a string value: {0}." , firstInput);
-                        
-                    }
-                    else
-                    {
-                        Console.WriteLine("You have entered an invalid string value: {0}." , firstInput);
-                     
-                    }
+                    //check for string
+                    valid = IsValidString(inputValue);
+                    inputValueType = "String";
                     break;
-                }
                 case 2:
-                {
-                    if (int.TryParse(firstInput , out intFirstInput))
-                    {
-                        Console.WriteLine("You have entered an integer: {0}." , firstInput);
-                    }
-                    Console.WriteLine("You have entered an invalid integer: {0}." , firstInput);
+                    int returnValue = 0;
+                    //check for integer
+                    valid = int.TryParse(inputValue, out returnValue);
+                    inputValueType = "Integer";
                     break;
-                }
                 case 3:
-                {
-                    if (firstInput == secondInput)
-                    {
-                        Console.WriteLine("first string: {0}, second string {1}, Strings match!", firstInput , secondInput);
-                    }
-                    else
-                    {
-                        Console.WriteLine("first string: {0}, second string {1}, Strings don't match.", firstInput , secondInput);
-                    }
+                    bool returnFlag = false;
+                    //check for boolean
+                    valid = bool.TryParse(inputValue, out returnFlag);
+                    inputValueType = "Boolean";
                     break;
-                }
-                        
+                default:
+                    inputValueType = "Unknown";
+                    Console.WriteLine("Unable to detect input type! ERROR!!!!!!!!!!!!");
+                    break;
+            }
+
+            Console.WriteLine("Inputted value is {0} ", inputValue);
+            if (valid)
+            {
+                Console.WriteLine("It's a valid {0}" , inputValueType);
+            }
+            else
+            {
+                Console.WriteLine("It's an invalid {0}" , inputValueType);
             }
 
 
 
-            static bool IsValidString(string input)
+            static bool IsValidString(string value)
             {
-                foreach (char c in input)
-                {
-                    if (char.IsNumber(c))
-                    {
+                foreach (char c in value)
+                { 
+                    if (!char.IsLetter(c)) 
                         return false;
-                        break;
-                    }
                 }
                 return true;
             }
