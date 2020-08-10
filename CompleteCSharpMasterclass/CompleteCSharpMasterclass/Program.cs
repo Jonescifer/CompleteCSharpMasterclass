@@ -23,51 +23,36 @@ namespace CompleteCSharpMasterclass
                 {" "," "," ","|"," "," "," ","|"," "," "," "}
             };
             
-            
-                /*
-                for (row = 0; row < 9; row++)
-                {
-                    for (index=0 ; index < 12 ; index++) // needed to tell what row is e.g int row=0 and not row=0;
-                    {
-                        Console.Write(ticTacToe.GetValue(index)); // was not goot - needed two values row and index
-                    }
-                    Console.WriteLine();
-                }
-                */
+            ShowGame(ticTacToe);
+            UserInput();
+            CheckGame(ticTacToe);
 
-                
-                /*
-                 //prints array in one line per index - not good fo me..
-                 
-                foreach (string i in ticTacToe)
-                {
-                    Console.WriteLine("{0}", i);
-                } 
-                for (int k = 0; k < 10; k++) // better to use GetLength!
-                { 
-                    for (int l=0 ; l < 11 ; l++) 
-                    { 
-                        Console.Write(ticTacToe[k,l]); 
-                    } 
-                    Console.WriteLine();
-                    } 
-                */
 
-                static void ShowGame(string[]ticTacToe)
-                {
-                   for (int i = 0; i < ticTacToe.GetLength(0); i++)
-                   { 
-                       for (int j = 0; j < ticTacToe.GetLength(1); j++) 
-                       { 
-                           Console.Write("{0}" , ticTacToe[i,j]);
-                       }
-                       Console.WriteLine();
-                    }
-                   
-                }
-                
-                
         }
+
+        static void ShowGame(string[,] ticTacToe)
+        {
+            
+            
+            for (int i = 0; i < ticTacToe.GetLength(0); i++)
+            { 
+                for (int j = 0; j < ticTacToe.GetLength(1); j++)  
+                { 
+                    Console.Write("{0}" , ticTacToe[i,j]);
+                } 
+                Console.WriteLine();
+            }
+        }
+
+        static int UserInput()
+        {
+            string input = Console.ReadLine();
+            
+            //if is int 1-9 return intInput.
+            
+            return intInput;
+        }
+        
     }
 }
 
