@@ -9,35 +9,64 @@ namespace CompleteCSharpMasterclass
     {
         public static void Main(string[] args)
         {
-            int[,,] array3D =
+            string[,] ticTacToe =
             {
+                {" "," "," ","|"," "," "," ","|"," "," "," "},
+                {" ","1"," ","|"," ","2"," ","|"," ","3"," "},
+                {"_","_","_","|","_","_","_","|","_","_","_"},
+                {" "," "," ","|"," "," "," ","|"," "," "," "},
+                {" ","4"," ","|"," ","5"," ","|"," ","6"," "},
+                {" "," "," ","|"," "," "," ","|"," "," "," "},
+                {"_","_","_","|","_","_","_","|","_","_","_"},
+                {" "," "," ","|"," "," "," ","|"," "," "," "},
+                {" ","7"," ","|"," ","8"," ","|"," ","9"," "},
+                {" "," "," ","|"," "," "," ","|"," "," "," "}
+            };
+            
+            
+                /*
+                for (row = 0; row < 9; row++)
                 {
-                    {10,58},
-                    {27,74},
-                    {54,19}
-                },
-                {
-                    {5,59},
-                    {32,34},
-                    {89,62}
+                    for (index=0 ; index < 12 ; index++) // needed to tell what row is e.g int row=0 and not row=0;
+                    {
+                        Console.Write(ticTacToe.GetValue(index)); // was not goot - needed two values row and index
+                    }
+                    Console.WriteLine();
                 }
-            };
+                */
 
-            // Depth->Row->column
-            Console.WriteLine("value is: {0}", array3D[1,0,1]);
+                
+                /*
+                 //prints array in one line per index - not good fo me..
+                 
+                foreach (string i in ticTacToe)
+                {
+                    Console.WriteLine("{0}", i);
+                } 
+                for (int k = 0; k < 10; k++) // better to use GetLength!
+                { 
+                    for (int l=0 ; l < 11 ; l++) 
+                    { 
+                        Console.Write(ticTacToe[k,l]); 
+                    } 
+                    Console.WriteLine();
+                    } 
+                */
 
-            string[,] stringArray2D = 
-            {
-                {"one", "two"}, 
-                {"three", "four"}, 
-                {"five", "six"}
-            };
-            stringArray2D.SetValue("chicken",1,1);
-            Console.WriteLine("value is: {0}", stringArray2D[1,1]);
-            stringArray2D[1, 1] = "pickem";
-            Console.WriteLine("value is: {0}", stringArray2D[1,1]);
-            //rank returns dimensions number of array
-            Console.WriteLine("number of dimensions for array3D is {0}" , array3D.Rank );
+                static void ShowGame(string[]ticTacToe)
+                {
+                   for (int i = 0; i < ticTacToe.GetLength(0); i++)
+                   { 
+                       for (int j = 0; j < ticTacToe.GetLength(1); j++) 
+                       { 
+                           Console.Write("{0}" , ticTacToe[i,j]);
+                       }
+                       Console.WriteLine();
+                    }
+                   
+                }
+                
+                
         }
     }
 }
