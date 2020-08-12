@@ -31,7 +31,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Box.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Members.cs" />
     <Compile Include="Program.cs" />
