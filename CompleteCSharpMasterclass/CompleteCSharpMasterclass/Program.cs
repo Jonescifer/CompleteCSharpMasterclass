@@ -84,11 +84,19 @@ namespace CompleteCSharpMasterclass
                     case 1:
                         EditArray(intPlayerInput);
                         CheckWinStatus();
+                        if (_gameWon)
+                        {
+                            break;
+                        }
                         _currentPlayer = 2;
                         break;
                     case 2:
                         EditArray(intPlayerInput);
                         CheckWinStatus();
+                        if (_gameWon)
+                        {
+                            break;
+                        }
                         _currentPlayer = 1;
                         break;
                 }
