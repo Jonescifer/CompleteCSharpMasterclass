@@ -182,9 +182,6 @@ namespace CompleteCSharpMasterclass
             {
                 _gameDraw = true;
             }
-
-
-
         }
 
         static bool AllFieldsFull()
