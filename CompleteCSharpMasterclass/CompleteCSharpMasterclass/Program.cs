@@ -9,10 +9,23 @@ namespace CompleteCSharpMasterclass
 {
     public class MainClass
     {
+        
+        
+
         public static void Main(string[] args)
         {
+            int [][] jaggedArray = new int[3][]; //new jagged array of type int. has three values. at indexs: 0,1,2.
+            jaggedArray[0]= new int[5];// new array at index 0. has five values.
+            jaggedArray[0][3] = 66;// added the value 66 to the 4th place (index 3) of the array we just created one line up.
+            // hope i got it right :)
+            
+            
             int[] studentsGrades = new[] {40, 55, 100, 98, 75, 34, 29, 89, 99,45,98};
             var studentsAvarage = GetAverage(studentsGrades);
+            foreach (var grade in studentsGrades)
+            {
+                Console.WriteLine("grade {0}" , grade);
+            }
             
             Console.WriteLine("average of grades is: {0}", studentsAvarage);
         }
