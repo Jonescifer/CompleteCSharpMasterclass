@@ -7,42 +7,32 @@ using System.Runtime.Remoting.Messaging;
 
 namespace CompleteCSharpMasterclass
 {
-    public class MainClass
+    class MainClass
     {
-        
-        
-
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int [][] jaggedArray = new int[3][]; //new jagged array of type int. has three values. at indexs: 0,1,2.
-            jaggedArray[0]= new int[5];// new array at index 0. has five values.
-            jaggedArray[0][3] = 66;// added the value 66 to the 4th place (index 3) of the array we just created one line up.
-            // hope i got it right :)
+            int[] happinessArray = new[] {2, 3, 4, 5, 6};
             
+            SunIsShining(happinessArray);
+
+            int index = 0;// wanted to have index. for eace loops dont have index.. so i made an external variable and used it as the index of the array.
             
-            int[] studentsGrades = new[] {40, 55, 100, 98, 75, 34, 29, 89, 99,45,98};
-            var studentsAvarage = GetAverage(studentsGrades);
-            foreach (var grade in studentsGrades)
+            foreach (var element in happinessArray)
             {
-                Console.WriteLine("grade {0}" , grade);
+                
+                Console.WriteLine("happiness at {0} is: {1}" , index , element);
+                index++;
             }
-            
-            Console.WriteLine("average of grades is: {0}", studentsAvarage);
         }
 
-        static double GetAverage(int [] gradesArray)
+        static void SunIsShining(int[] x) // it will also assign these new values to the happiness array!!!! 
         {
-            double average = 0;
-            int sum = 0;
-            int size = gradesArray.Length;
-            for (int i = 0 ; i < size ; i++)
+            for(int i = 0 ; i < x.Length ; i++)
             {
-                sum += gradesArray[i];
+                x[i] += 2;
+                
+                //Console.WriteLine("{0}" , x[i]);
             }
-
-            average = (double)sum / size; //casting sum to double!
-            
-            return average;
         }
     }
 }
