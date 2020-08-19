@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.ComponentModel;
 using System.Diagnostics.Eventing.Reader;
 using System.Media;
@@ -11,37 +12,46 @@ namespace CompleteCSharpMasterclass
     {
         static void Main(string[] args)
         {
-            int[] happinessArray = new[] {2, 3, 4, 5, 6};
+            //declaring an ArrayList with an undefined amount of objects.
+            ArrayList myArrayList = new ArrayList();
+            //declaring an ArrayList and initializing it with a defined amount of objects.(100)
+            ArrayList myArrayList2 = new ArrayList(100);
 
-            SunIsShining(happinessArray);
+            myArrayList.Add(25);//
+            myArrayList.Add("Hello");
+            myArrayList.Add(13.37);
+            myArrayList.Add(13);//
+            myArrayList.Add(128);//
+            myArrayList.Add(25.3);//
+            myArrayList.Add(13);
 
-            int index = 0;// wanted to have index. for eace loops dont have index.. so i made an external variable and used it as the index of the array.
             
-            foreach (var element in happinessArray)
+            // remove an element with a specific value. the first "13" object it encounters
+            myArrayList.Remove(13);
+            myArrayList.Remove(13);
+            myArrayList.Remove(13);//didnt find anything so nothing changed in the sum.
+            myArrayList.RemoveAt(0);
+            Console.WriteLine(myArrayList.Count);
+
+            double sum = 0;
+            foreach (object obj in myArrayList)
             {
-                
-                Console.WriteLine("happiness at {0} is: {1}" , index , element);
-                index++;
+                if (obj is int)
+                {
+                    sum += Convert.ToDouble(obj);
+                }
+                else if (obj is double)
+                {
+                    sum += (double)obj;
+                }
+                else if (obj is string)
+                {
+                    Console.WriteLine(obj);
+                }
             }
+            Console.WriteLine(sum);
         }
 
-        /*
-         TURNS OUT I DIDNT UNDERSTAND THIS!!!! I DIDNT UNDERSTAND HOW TO CHANGE THE happinessARRAY, i thought i only changed the x array inside the method. BUT NO! an array is a reference type. so you make changes to the actual argument( happiness array)!!!
-         
-         Why you can change an array by passing it as a variable
-         If you tried to run the Method call SunIsShining(happiness);  without assigning it to happiness you might have realized, that happiness itself is changed. Why is that?
-         Arrays are a reference type in C#. This means that each time an array is passed as an argument to any function, the reference (or pointer) to the argument is passed to the function.
-         Thus any modifications you make to the array in the function are made in the actual argument also
-        */
-        static void SunIsShining(int[] x) // it will also assign these new values to the happiness array!!!! 
-        {
-            for(int i = 0 ; i < x.Length ; i++)
-            {
-                x[i] += 2;
-                
-                //Console.WriteLine("{0}" , x[i]);
-            }
-        }
     }
 }
 
