@@ -1,26 +1,17 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics.Eventing.Reader;
-using System.Media;
-using System.Net;
-using System.Runtime.Remoting.Messaging;
-
 namespace CompleteCSharpMasterclass
-{
+
+{ 
     class MainClass
     {
         static void Main(string[] args)
         {
             var friends = new List<string>{"Frank", "Joe","Michelle" , "Andy", "Maria", "Carlos", "Angelina"};
-            var partyFriend = GetPartyFriends(friends, 3);
+            var partyFriend = GetPartyFriends(friends, 2);
 
             foreach (var name in partyFriend)
-            {
                 Console.WriteLine(name);
-            }
-            
         }
 
         public static List<string> GetPartyFriends(List<string> list, int count)
@@ -32,7 +23,7 @@ namespace CompleteCSharpMasterclass
                 var currentFriend = GetPartyFriend(list);
                 
                 partyFriends.Add(currentFriend);
-                list.Remove(currentFriend);
+                list.Remove(currentFriend); // not clean programing - because we remove from the list we receive - friends.
             }
             
             return partyFriends;
