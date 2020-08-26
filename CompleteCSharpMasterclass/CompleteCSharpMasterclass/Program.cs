@@ -7,39 +7,36 @@ namespace CompleteCSharpMasterclass
     {
         static void Main(string[] args)
         {
-            var friends = new List<string>{"Frank", "Joe","Michelle" , "Andy", "Maria", "Carlos", "Angelina"};
-            var partyFriend = GetPartyFriends(friends, 2);
+            var friendsList = new List<string>{"Frank", "Joe","Michelle" , "Andy", "Maria", "Carlos", "Angelina"};
+            var partyFriendsList = GetPartyFriends(friendsList, 4);
 
-            foreach (var name in partyFriend)
+            foreach (var name in partyFriendsList)
                 Console.WriteLine(name);
         }
 
-        public static List<string> GetPartyFriends(List<string> list, int count)
+        public static List<string> GetPartyFriends(List<string> listAllFriends, int count)
         {
-            var partyFriends = new List<string>();
+            var partyFriendsList = new List<string>();
             
-            while (partyFriends.Count < count)
+            while (partyFriendsList.Count < count)
             {
-                var currentFriend = GetPartyFriend(list);
-                
-                partyFriends.Add(currentFriend);
-                list.Remove(currentFriend); // not clean programing - because we remove from the list we receive - friends.
+                var currentFriend = GetPartyFriend(listAllFriends);
+                partyFriendsList.Add(currentFriend);
+                listAllFriends.Remove(currentFriend); // not clean programing - because we remove from the list we receive - friends.
             }
-            
-            return partyFriends;
+            return partyFriendsList;
         }
-
-        public static string GetPartyFriend(List<string> list)
+        
+        public static string GetPartyFriend(List<string> listFriends)
         {
-            string shortestName = list[0];
-            for (int i = 0; i < list.Count; i++)
+            string shortestName = listFriends[0];
+            for (int i = 0; i < listFriends.Count; i++)
             {
-                if (list[i].Length > shortestName.Length)
+                if (listFriends[i].Length > shortestName.Length)
                 {
-                    shortestName = list[i];
+                    shortestName = listFriends[i];
                 }
             }
-
             return shortestName;
         }
     }
