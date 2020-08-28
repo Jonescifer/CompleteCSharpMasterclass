@@ -1,14 +1,19 @@
 using System;
-using System.Timers;
+using System.Threading;
 
 namespace CompleteCSharpMasterclass
 {
     public class VideoPost : Post
     {
+        //member fields
+        private bool _isPlaying;
+        private int _currDuration;
+        private Timer _timer;
+        //properties
         private string VideoUrl { get; set; }
         private int Length { get; set; }
         
-        private static Timer _videoTimer = new Timer();
+       
         
         public VideoPost(){} // if we have an empty constructor - then the BASE class, (e.g. Post) constructor will be called! this one -> public Post(){this.Id = 0;this.Title = "Default Post";this.SentByUsername = "John Doe";this.IsPublic = true;}
 
@@ -23,11 +28,49 @@ namespace CompleteCSharpMasterclass
             this.Length = length;
         }
         
-        //return an overide ToString...
         public override string ToString()
-        {
-            return string.Format("ID: {0} - {1} - {2} - length: {3} by: {4}. ", this.Id, this.Title, this.VideoUrl, this.Length, this.SentByUsername);
+        { 
+            return
+                $"ID: {this.Id} - {this.Title} - {this.VideoUrl} - length: {this.Length} by: {this.SentByUsername}. ";
         }
+        
+        public void Play()
+        {
+            if (!_isPlaying) //only if is playin == false you can PLAY.
+            {
+                _isPlaying = true;
+                Console.WriteLine("Playing...");
+                _timer = new Timer(TimerCallback,null, 0, 1000);
+            }
+            
+        }
+        private void TimerCallback(object state)
+        {
+            if (_currDuration < Length)//if video is still inside its play range..
+            {
+                _currDuration++;
+                Console.WriteLine("Video at {0}s", _currDuration);// print out current time, its in 1000 milliseconds.
+                GC.Collect();
+            }
+            else
+            {
+                Stop();
+            }
+        }
+        
+        public void Stop()
+        {
+            if (_isPlaying) //only if is playin == true you can STOP.
+            {
+                _isPlaying = false;
+                Console.WriteLine("Stopped at second: {0}", _currDuration);//tell user we stopped
+                _currDuration = 0;//set current duration to zero again.
+                _timer.Dispose();//stops timer cleans and Resets it.
+            }
+            
+        }
+        
+        
         
     }
 }
