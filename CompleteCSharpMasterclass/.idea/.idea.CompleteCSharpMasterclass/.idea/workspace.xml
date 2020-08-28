@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9552a6c6-e200-4ab1-b4aa-0df2f0bd62f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/ImagePost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/VideoPost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/CompleteCSharpMasterclass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/CompleteCSharpMasterclass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/ImagePost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/ImagePost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass/bin/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
@@ -41,44 +42,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/MyTicTacToe.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/ImagePost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D8DC2CE1-6D10-4014-8386-8046F78047E7/E1/throwhelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/VideoPost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/MyTicTacToe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CompleteCSharpMasterclass/ImagePost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D8DC2CE1-6D10-4014-8386-8046F78047E7/11A/Console.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -89,9 +60,10 @@
         <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/Members.cs" />
         <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/temp.cs" />
         <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/MyTicTacToe.cs" />
-        <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" />
-        <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" />
         <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/ImagePost.cs" />
+        <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/Post.cs" />
+        <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/VideoPost.cs" />
+        <option value="$PROJECT_DIR$/CompleteCSharpMasterclass/Program.cs" />
       </list>
     </option>
   </component>
@@ -146,6 +118,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,11 +146,13 @@
       <workItem from="1597727176634" duration="24187000" />
       <workItem from="1597847797153" duration="2394000" />
       <workItem from="1598425590812" duration="15424000" />
+      <workItem from="1598591673770" duration="781000" />
+      <workItem from="1598593154979" duration="3068000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -201,6 +176,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="864" y="372" key="#Inspection_severity/0.0.2560.1440/2560.0.1920.1200@0.0.2560.1440" timestamp="1596193153355" />
+    <state x="968" y="463" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598592100504">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="968" y="463" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1440/2560.0.1920.1200@0.0.2560.1440" timestamp="1598592100504" />
     <state x="1043" y="431" key="#xdebugger.evaluate" timestamp="1598432064730">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

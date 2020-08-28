@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_CompleteCSharpMasterclass.180191245.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_CompleteCSharpMasterclass.180191245.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CompleteCSharpMasterclass" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -15,6 +15,7 @@
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="VideoPost.cs" t="Include" />
       </e>
       <e p="CompleteCSharpMasterclass.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

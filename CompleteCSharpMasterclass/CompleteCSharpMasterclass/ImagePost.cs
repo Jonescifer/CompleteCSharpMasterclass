@@ -6,11 +6,8 @@ namespace CompleteCSharpMasterclass
     // ImagePost derived from Post and adds a property (ImageURL) and two constructors.
     class ImagePost : Post
     {
-        public string ImageUrl { get; set; }
-
-
-        public ImagePost() { }
-
+        private string ImageUrl { get; set; }
+        public ImagePost() { }// if we have an empty constructor - then the BASE class, (e.g. Post) constructor will be called! this one -> public Post(){this.Id = 0;this.Title = "Default Post";this.SentByUsername = "John Doe";this.IsPublic = true;}
         public ImagePost(string title , string sentByUsername , string imageUrl , bool isPublic)
         {
             //use properties and method from Post class!!!! inheritance!!!!!!!muahahahahahahahahahaha!!!!!!!

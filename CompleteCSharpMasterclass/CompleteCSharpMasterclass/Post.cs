@@ -5,7 +5,7 @@ namespace CompleteCSharpMasterclass
 {
     public class Post
     {
-        //one per Class (?)
+        //UNIQUE for the Whole program!!!!
         private static int _currentPostId;
         
         //properties
