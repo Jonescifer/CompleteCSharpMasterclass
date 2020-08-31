@@ -8,6 +8,7 @@ namespace CompleteCSharpMasterclass
     {
         static void Main(string[] args)
         { 
+            /*
             var post1 = new Post();
             Console.WriteLine(post1.ToString());
             
@@ -19,14 +20,17 @@ namespace CompleteCSharpMasterclass
             
             var imagePost1 = new ImagePost("check out my new helmet!" , "Paul Wolf", "https://phinemo.com/beginilah-maaf-jika-diucapkan-dengan-bahasa-lain-di-dunia/dfghh/", true);
             Console.WriteLine(imagePost1.ToString());
-            
+            */
             var videoPost1 = new VideoPost("run the jewels" , "Paul Wolf" , "https://www.youtube.com/watch?v=rONyX2-nQ5A" , 5 , true );
             Console.WriteLine(videoPost1.ToString());
             
+            
             videoPost1.Play();
-            Console.WriteLine("Press any key to stop the video");
+            Console.WriteLine("press any key to stop...");
             Console.ReadKey();
             videoPost1.Stop();
+            
+
         }
     }
 }

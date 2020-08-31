@@ -1,14 +1,17 @@
 using System;
 using System.Threading;
 
+
 namespace CompleteCSharpMasterclass
 {
     public class VideoPost : Post
     {
         //member fields
-        private bool _isPlaying;
-        private int _currDuration;
-        private Timer _timer;
+        private bool _isPlaying = false;
+        private int _secondCounter;
+        private Timer _timer; // As long as you are using a Timer, you must keep a reference to it. As with any managed object, a Timer is subject to garbage collection when there are no references to it. The fact that a Timer is still active does not prevent it from being collected.
+        
+        
         //properties
         private string VideoUrl { get; set; }
         private int Length { get; set; }
@@ -33,44 +36,46 @@ namespace CompleteCSharpMasterclass
             return
                 $"ID: {this.Id} - {this.Title} - {this.VideoUrl} - length: {this.Length} by: {this.SentByUsername}. ";
         }
-        
+
         public void Play()
         {
-            if (!_isPlaying) //only if is playin == false you can PLAY.
+            if (!_isPlaying)
             {
                 _isPlaying = true;
-                Console.WriteLine("Playing...");
-                _timer = new Timer(TimerCallback,null, 0, 1000);
+                Console.WriteLine("Play has commenced");
+                _timer = new Timer(TimerCallback, null, 0, 1000);
+                
             }
             
         }
+
         private void TimerCallback(object state)
         {
-            if (_currDuration < Length)//if video is still inside its play range..
-            {
-                _currDuration++;
-                Console.WriteLine("Video at {0}s", _currDuration);// print out current time, its in 1000 milliseconds.
-                GC.Collect();
+            if (_secondCounter < Length)
+            { 
+                _secondCounter++;
+               Console.WriteLine("{0} seconds passed.", _secondCounter);
+               GC.Collect();// force garbage collection.. why? dont know yet..
+                
             }
             else
-            {
-                Stop();
+            { 
+                Stop();// need to stop! 
             }
         }
-        
+
         public void Stop()
         {
-            if (_isPlaying) //only if is playin == true you can STOP.
+            if (_isPlaying)
             {
                 _isPlaying = false;
-                Console.WriteLine("Stopped at second: {0}", _currDuration);//tell user we stopped
-                _currDuration = 0;//set current duration to zero again.
-                _timer.Dispose();//stops timer cleans and Resets it.
+                Console.WriteLine("play has ended at second: {0}.", _secondCounter);
+                _timer.Dispose(); //Releases all resources used by the current instance of Timer.
             }
-            
         }
-        
-        
-        
     }
+        
+        
+        
 }
+
