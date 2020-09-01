@@ -6,7 +6,9 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CompleteCSharpMasterclass" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Boss.cs" t="Include" />
         <e p="CompleteCSharpMasterclass.csproj" t="IncludeRecursive" />
+        <e p="Employee.cs" t="Include" />
         <e p="ImagePost.cs" t="Include" />
         <e p="MyTicTacToe.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
@@ -15,6 +17,7 @@
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="Trainee.cs" t="Include" />
         <e p="VideoPost.cs" t="Include" />
       </e>
       <e p="CompleteCSharpMasterclass.sln" t="IncludeFlat" />
