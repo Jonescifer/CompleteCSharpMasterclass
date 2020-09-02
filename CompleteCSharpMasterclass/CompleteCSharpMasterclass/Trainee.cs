@@ -6,18 +6,9 @@ namespace CompleteCSharpMasterclass
     {
         public double WorkingHours { get; set; }
         public double SchoolHours { get; set; }
-
-
-        public Trainee()
+        
+        public Trainee(string sureName, string firstName, int salary, double workingHours, double schoolHours): base (sureName, firstName, salary)
         {
-
-        }
-
-        public Trainee(string sureName, string firstName, int salary, double workingHours, double schoolHours)
-        {
-            this.SureName = sureName;
-            this.FirstName = firstName;
-            this.Salary = salary;
             this.WorkingHours = workingHours;
             this.SchoolHours = schoolHours;
         }

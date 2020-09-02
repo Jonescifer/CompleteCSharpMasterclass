@@ -6,16 +6,8 @@ namespace CompleteCSharpMasterclass
     {
         public string CompanyCar { get; set; }
 
-        public Boss()
+        public Boss(string sureName, string firstName, int salary, string companyCar) : base (sureName, firstName, salary)
         {
-
-        }
-
-        public Boss(string sureName, string firstName, int salary, string companyCar)
-        {
-            this.SureName = sureName;
-            this.FirstName = firstName;
-            this.Salary = salary;
             this.CompanyCar = companyCar;
         }
 
