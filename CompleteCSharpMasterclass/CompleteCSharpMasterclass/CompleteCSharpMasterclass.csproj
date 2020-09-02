@@ -31,10 +31,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audi.cs" />
+    <Compile Include="BMW.cs" />
     <Compile Include="Boss.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ImagePost.cs" />
     <Compile Include="INotifications.cs" />
+    <Compile Include="M3.cs" />
     <Compile Include="MyTicTacToe.cs" />
     <Compile Include="Notification.cs" />
     <Compile Include="Post.cs" />

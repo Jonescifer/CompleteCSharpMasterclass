@@ -3,15 +3,46 @@ using System.CodeDom;
 using System.Collections.Generic;
 namespace CompleteCSharpMasterclass
 
-{ 
+{
     class MainClass
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-          var n1 = new Notification("connor", "he is comming","1986" );
-          var n2 = new Notification("terminator", "astalavista baby", "1986");
-          n1.ShowNotification();
-          n2.ShowNotification();
+            //a car can be a BMW, Porsche etc.
+            //Polymorphism at work #1: an Audi, a BMW, a Porsche..
+            //can all be used wherever a "Car" class is expected. No cast is required because an implicit conversion exists from a derived class to its base class.
+
+            var listCars = new List<Car>
+            {
+                new Bmw(150, "black", "M3"),
+                new Audi(165, "silver", "A5")
+            };
+
+            //Polymorphism at work #2: the VIRTUAL method Repair() is invoked on each of the derived classes, not the base class... V I R T U A L
+            foreach (var car in listCars)
+            {
+                car.Repair();
+            }
+
+            //uses ShowDetail() of base class.
+            Car beemer1 = new Bmw(300, "red", "m5");
+            beemer1.ShowDetails();
+            
+            //uses ShowDetail() of derived class. Could be also:  Bmw beemer2 = new Bmw!
+            var beemer2 = new Bmw(250, "green", "m1");
+            beemer2.ShowDetails();
+
+            //still is a derived class - uses the classes ShowDetail() method...
+            var beemer3 =  beemer2;
+            beemer3.ShowDetails();
+            
+            //explicitly casted Base class (Car) to beemer4.
+            var beemer4 = (Car) beemer2;
+            beemer4.ShowDetails();
+
+            var beemerM3 = new M3(366, "blue", "m3");
+            beemerM3.ShowDetails();
+
         }
     }
 }
