@@ -12,6 +12,7 @@ namespace CompleteCSharpMasterclass
             //Polymorphism at work #1: an Audi, a BMW, a Porsche..
             //can all be used wherever a "Car" class is expected. No cast is required because an implicit conversion exists from a derived class to its base class.
 
+            //you can use subclass when using a list of base class..
             var listCars = new List<Car>
             {
                 new Bmw(150, "black", "M3"),
@@ -24,7 +25,7 @@ namespace CompleteCSharpMasterclass
                 car.Repair();
             }
 
-            //uses ShowDetail() of base class.
+            /*//uses ShowDetail() of base class.
             Car beemer1 = new Bmw(300, "red", "m5");
             beemer1.ShowDetails();
             
@@ -41,7 +42,18 @@ namespace CompleteCSharpMasterclass
             beemer4.ShowDetails();
 
             var beemerM3 = new M3(366, "blue", "m3");
-            beemerM3.ShowDetails();
+            beemerM3.ShowDetails();*/
+
+            Car bmwZ3 = new Bmw(200, "black", "Z3");
+            Car audiA3 = new Audi(100,"green","A3");
+            bmwZ3.ShowDetails();
+            audiA3.ShowDetails();
+
+            Bmw bmwM5 = new Bmw(330,"white","M5");
+            bmwM5.ShowDetails();
+
+            Car carB = (Car) bmwM5;
+            carB.ShowDetails();
 
         }
     }

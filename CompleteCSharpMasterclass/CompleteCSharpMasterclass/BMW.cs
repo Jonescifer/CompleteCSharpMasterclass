@@ -5,9 +5,9 @@ namespace CompleteCSharpMasterclass
     //a BMW is a Car 
     public class Bmw : Car
     {
-        protected string Model { get; set; }
+        
         private string _brand = "BMW";
-
+        protected string Model { get; set; }
         public Bmw()
         {
             
@@ -18,9 +18,9 @@ namespace CompleteCSharpMasterclass
             this.Model = model;
         }
         
-        public new void ShowDetails()
+        public new void ShowDetails() // new is not override, it is intended to HIDE the base class method, i.e. use instead. but not override. 
         {
-            Console.WriteLine(Model + " " + _brand + " " + "HorsePower " + Hp + ", Color " + Color + ".");
+            Console.WriteLine("Brand " + _brand  + ", Model " + Model + ", HP " + Hp + ", color " + Color);
         }
 
         //added SEALED to the method so it cannot be over ridden by the derived class M3.

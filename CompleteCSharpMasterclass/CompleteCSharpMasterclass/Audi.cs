@@ -6,7 +6,7 @@ namespace CompleteCSharpMasterclass
     public class Audi : Car
     {
         private string Model { get; set; }
-        private string _brand = "BMW";
+        private string _brand = "Audi";
         
         public Audi (int hp , string color ,string model) : base ( hp , color) //have to have arguments horsePower/color but it will take the parameters from base class.
         {
@@ -15,12 +15,12 @@ namespace CompleteCSharpMasterclass
         
         public new void ShowDetails()
         {
-            Console.WriteLine(Model + " " + _brand + " " + "HorsePower " + Hp + ", Color " + Color + ".");
+            Console.WriteLine("Brand "  + _brand + ", Model " + Model + ", HP " + Hp + ", color " + Color);
         }
 
         public override void Repair()
         {
             Console.WriteLine("Audi {0} was repaired!", Model);
         }
-    }
+    }  
 }
