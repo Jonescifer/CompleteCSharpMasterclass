@@ -7,6 +7,18 @@ namespace CompleteCSharpMasterclass
         protected int Hp { get; set; }
         protected string Color { get; set; }
         
+        //has a relationship
+        protected CarIdInfo CarIdInfo = new CarIdInfo();
+        public void SetCarIdInfo(int idNum,string owner)
+        {
+            CarIdInfo.IdNum = idNum;
+            CarIdInfo.Owner = owner;
+        }
+        public void GetCarIdInfo()
+        {
+            Console.WriteLine("cars id is {0}, and its owner is {1}", CarIdInfo.IdNum,CarIdInfo.Owner);
+        }
+        
         public Car()
         {
             Hp = 120;

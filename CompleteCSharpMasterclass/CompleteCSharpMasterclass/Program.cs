@@ -54,6 +54,9 @@ namespace CompleteCSharpMasterclass
 
             Car carB = (Car) bmwM5;
             carB.ShowDetails();
+            
+            bmwZ3.SetCarIdInfo(15,"Paul Wolf");
+            bmwZ3.GetCarIdInfo();
 
         }
     }

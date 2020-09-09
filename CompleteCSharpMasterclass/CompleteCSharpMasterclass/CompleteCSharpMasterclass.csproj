@@ -35,6 +35,7 @@
     <Compile Include="BMW.cs" />
     <Compile Include="Boss.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="CarIDInfo.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ImagePost.cs" />
     <Compile Include="INotifications.cs" />
