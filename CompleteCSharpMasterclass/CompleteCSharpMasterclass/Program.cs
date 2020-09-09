@@ -7,46 +7,23 @@ namespace CompleteCSharpMasterclass
 {
     class MainClass
     {
-        // Enums a re there to share a set of constants to keep the library consistent.
-        private enum Day
-        {
-            Su,
-            Mo,
-            Tu,
-            We,
-            Th,
-            Fr,
-            Sa
-        };
 
-        private enum Month
-        {
-            Jan=1,
-            Feb,
-            Mar,
-            Apr,
-            May,
-            Jun,
-            Jul=12,
-            Aug,
-            Sep,
-            Oct,
-            Nov,
-            Dec
-        };
-        
         private static void Main(string[] args)
         {
-            var friday = Day.Fr;
-            var sunday = Day.Su;
-            var dayA = Day.Fr;
+            Console.WriteLine($"ceiling of 12.1 is: {Math.Ceiling(12.1)}");
+            Console.WriteLine($"flooring of 12.1 is: {Math.Floor(12.1)}");
 
-            Console.WriteLine(friday==dayA);
-            Console.WriteLine(Day.Mo);
-            Console.WriteLine((int)Day.Su);
+            int num1 = 13;
+            int num2 = 9;
+            
+            Console.WriteLine($"Lower of {num1} and {num2} is {Math.Min(num1,num2)}");
+            Console.WriteLine($"Higher of {num1} and {num2} is {Math.Max(num1,num2)}");
+            Console.WriteLine($"3 to power of 5 of is {Math.Pow(3,5)}");
+            Console.WriteLine($"Pi is {Math.PI}");
+            Console.WriteLine($"square root of 25 is {Math.Sqrt(25)}");
+            Console.WriteLine($"Absolute number (always positive) of -25 is: {Math.Abs(-25)}");
+            Console.WriteLine($"Cosine of 1 is {Math.Cos(1)}");
 
-            Console.WriteLine((int)Month.Feb);
-            Console.WriteLine((int)Month.Aug);
         }
     }
 }
