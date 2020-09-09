@@ -1,63 +1,62 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
-namespace CompleteCSharpMasterclass
+using System.IO;
 
+namespace CompleteCSharpMasterclass
 {
     class MainClass
     {
         private static void Main(string[] args)
         {
-            //a car can be a BMW, Porsche etc.
-            //Polymorphism at work #1: an Audi, a BMW, a Porsche..
-            //can all be used wherever a "Car" class is expected. No cast is required because an implicit conversion exists from a derived class to its base class.
-
-            //you can use subclass when using a list of base class..
-            var listCars = new List<Car>
-            {
-                new Bmw(150, "black", "M3"),
-                new Audi(165, "silver", "A5")
-            };
-
-            //Polymorphism at work #2: the VIRTUAL method Repair() is invoked on each of the derived classes, not the base class... V I R T U A L
-            foreach (var car in listCars)
-            {
-                car.Repair();
-            }
-
-            /*//uses ShowDetail() of base class.
-            Car beemer1 = new Bmw(300, "red", "m5");
-            beemer1.ShowDetails();
             
-            //uses ShowDetail() of derived class. Could be also:  Bmw beemer2 = new Bmw!
-            var beemer2 = new Bmw(250, "green", "m1");
-            beemer2.ShowDetails();
+           //method 1
+            string [] newList = {"first line", "second line", "third line" };
+           File.WriteAllLines(@"/Users/paulwolf/Desktop/textFile2.txt" , newList);
 
-            //still is a derived class - uses the classes ShowDetail() method...
-            var beemer3 =  beemer2;
-            beemer3.ShowDetails();
-            
-            //explicitly casted Base class (Car) to beemer4.
-            var beemer4 = (Car) beemer2;
-            beemer4.ShowDetails();
+           string[] highScoreList = {"1000", "500", "250" };
+           File.WriteAllLines(@"/Users/paulwolf/Desktop/highScores.txt" , highScoreList);
+           
+           // method 2
+           Console.WriteLine("Please give the file a name.");
+           string fileName = Console.ReadLine();
+           Console.WriteLine("please type text in file");
+           string input = Console.ReadLine();
+           File.WriteAllText(@"/Users/paulwolf/Desktop/" + fileName + ".txt" , input);
+           
+           //method 3
+           using(StreamWriter file = new StreamWriter(@"/Users/paulwolf/Desktop/TextFile.txt"))
+           {
+               foreach (string line in newList)
+               {
+                   if (line.Contains("line"))
+                   {
+                       file.WriteLine(line);
+                   }
+                   
+               }
+           }
+           //adding a line to a text file that already exists..
+           using (StreamWriter file = new StreamWriter(@"/Users/paulwolf/Desktop/TextFile.txt", true))
+           {
+               file.WriteLine("additional line..");
+           }
+           
 
-            var beemerM3 = new M3(366, "blue", "m3");
-            beemerM3.ShowDetails();*/
+           
+           //example 1 - reading text from file.
+           string text = System.IO.File.ReadAllText(@"/Users/paulwolf/Desktop/textFile.txt");
+           Console.WriteLine($"the text is: \n{text}");
+           
+           //example 2 - list..
 
-            Car bmwZ3 = new Bmw(200, "black", "Z3");
-            Car audiA3 = new Audi(100,"green","A3");
-            bmwZ3.ShowDetails();
-            audiA3.ShowDetails();
-
-            Bmw bmwM5 = new Bmw(330,"white","M5");
-            bmwM5.ShowDetails();
-
-            Car carB = (Car) bmwM5;
-            carB.ShowDetails();
-            
-            bmwZ3.SetCarIdInfo(15,"Paul Wolf");
-            bmwZ3.GetCarIdInfo();
-
+           string[] linesList = System.IO.File.ReadAllLines(@"/Users/paulwolf/Desktop/textFile.txt");
+           Console.WriteLine($"the text is: \n");// \n is new line.
+           foreach (var line in linesList)
+           {
+               Console.WriteLine("\t " + line);// the /t is TAB indentation..
+           }
+          
         }
     }
 }
