@@ -5,25 +5,40 @@ using System.IO;
 
 namespace CompleteCSharpMasterclass
 {
-    class MainClass
+    internal class MainClass
     {
-
         private static void Main(string[] args)
         {
-            Console.WriteLine($"ceiling of 12.1 is: {Math.Ceiling(12.1)}");
-            Console.WriteLine($"flooring of 12.1 is: {Math.Floor(12.1)}");
-
-            int num1 = 13;
-            int num2 = 9;
             
-            Console.WriteLine($"Lower of {num1} and {num2} is {Math.Min(num1,num2)}");
-            Console.WriteLine($"Higher of {num1} and {num2} is {Math.Max(num1,num2)}");
-            Console.WriteLine($"3 to power of 5 of is {Math.Pow(3,5)}");
-            Console.WriteLine($"Pi is {Math.PI}");
-            Console.WriteLine($"square root of 25 is {Math.Sqrt(25)}");
-            Console.WriteLine($"Absolute number (always positive) of -25 is: {Math.Abs(-25)}");
-            Console.WriteLine($"Cosine of 1 is {Math.Cos(1)}");
+            // //random dice face
+            // var randomDice = new Random();
+            // int numEyes;
+            // for (var i = 0; i < 10; i++)
+            // {
+            //     numEyes = randomDice.Next(1, 7);
+            //     Console.WriteLine(numEyes);
+            // }
+            //
 
+            //fortune teller
+            Console.WriteLine("Ask me a question..");
+            Console.ReadLine();
+            
+            var randomAnswer = new Random();
+            var answeNum = randomAnswer.Next(1, 4);
+
+            switch (answeNum)
+            {
+                case 1:
+                    Console.WriteLine("yes");
+                    return;
+                case 2:
+                    Console.WriteLine("maybe");
+                    return;
+                case 3:
+                    Console.WriteLine("no");
+                    return;
+            }
         }
     }
 }
