@@ -23,12 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eaeef53-cc4e-4484-941f-cca931b376a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Cube.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shape.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sphere.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +43,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Shape.cs" />
+        <option value="$PROJECT_DIR$/Cube.cs" />
+        <option value="$PROJECT_DIR$/Sphere.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1hdCvGYQ0poCWzpvLTEzpcPWwLH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -120,25 +126,25 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2518" height="276" key="GridCell.Tab.0.bottom" timestamp="1600352748165">
+    <state width="2518" height="276" key="GridCell.Tab.0.bottom" timestamp="1600357813811">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="276" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600352748165" />
+    <state width="2518" height="276" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813811" />
     <state width="2518" height="441" key="GridCell.Tab.0.bottom/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516110" />
-    <state width="2518" height="276" key="GridCell.Tab.0.center" timestamp="1600352748163">
+    <state width="2518" height="276" key="GridCell.Tab.0.center" timestamp="1600357813810">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="276" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600352748163" />
+    <state width="2518" height="276" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813810" />
     <state width="2518" height="441" key="GridCell.Tab.0.center/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
-    <state width="2518" height="276" key="GridCell.Tab.0.left" timestamp="1600352748162">
+    <state width="2518" height="276" key="GridCell.Tab.0.left" timestamp="1600357813809">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="276" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600352748162" />
+    <state width="2518" height="276" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813809" />
     <state width="2518" height="441" key="GridCell.Tab.0.left/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
-    <state width="2518" height="276" key="GridCell.Tab.0.right" timestamp="1600352748164">
+    <state width="2518" height="276" key="GridCell.Tab.0.right" timestamp="1600357813811">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="276" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600352748164" />
+    <state width="2518" height="276" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813811" />
     <state width="2518" height="441" key="GridCell.Tab.0.right/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
     <state width="2518" height="505" key="GridCell.Tab.1.bottom" timestamp="1600339422121">
       <screen x="-2560" y="23" width="2560" height="1417" />
@@ -192,6 +198,10 @@
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
     <state x="-1771" y="359" key="SettingsEditor/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600345922370" />
+    <state x="-2460" y="100" width="2360" height="1240" key="VCS.FileHistoryDialog" timestamp="1600353674261">
+      <screen x="-2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="-2460" y="100" width="2360" height="1240" key="VCS.FileHistoryDialog/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600353674261" />
     <state x="-1616" y="330" key="run.anything.popup" timestamp="1600339094570">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
