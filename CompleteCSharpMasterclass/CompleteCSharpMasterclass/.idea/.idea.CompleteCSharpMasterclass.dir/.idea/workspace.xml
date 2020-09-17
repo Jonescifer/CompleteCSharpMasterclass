@@ -23,18 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eaeef53-cc4e-4484-941f-cca931b376a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
     </list>
@@ -73,6 +65,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="CompleteCSharpMasterclass" type="DotNetProject" factoryName=".NET Project">
@@ -109,7 +102,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -121,27 +114,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2518" height="505" key="GridCell.Tab.0.bottom" timestamp="1600339422119">
+    <state width="2518" height="441" key="GridCell.Tab.0.bottom" timestamp="1600349516110">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="505" key="GridCell.Tab.0.bottom/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600339422119" />
-    <state width="2518" height="505" key="GridCell.Tab.0.center" timestamp="1600339422119">
+    <state width="2518" height="446" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600345924059" />
+    <state width="2518" height="441" key="GridCell.Tab.0.bottom/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516110" />
+    <state width="2518" height="441" key="GridCell.Tab.0.center" timestamp="1600349516109">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="505" key="GridCell.Tab.0.center/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600339422119" />
-    <state width="2518" height="505" key="GridCell.Tab.0.left" timestamp="1600339422118">
+    <state width="2518" height="446" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600345924057" />
+    <state width="2518" height="441" key="GridCell.Tab.0.center/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
+    <state width="2518" height="441" key="GridCell.Tab.0.left" timestamp="1600349516109">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="505" key="GridCell.Tab.0.left/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600339422118" />
-    <state width="2518" height="505" key="GridCell.Tab.0.right" timestamp="1600339422119">
+    <state width="2518" height="446" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600345924056" />
+    <state width="2518" height="441" key="GridCell.Tab.0.left/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
+    <state width="2518" height="441" key="GridCell.Tab.0.right" timestamp="1600349516109">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="505" key="GridCell.Tab.0.right/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600339422119" />
+    <state width="2518" height="446" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600345924058" />
+    <state width="2518" height="441" key="GridCell.Tab.0.right/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
     <state width="2518" height="505" key="GridCell.Tab.1.bottom" timestamp="1600339422121">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
@@ -190,6 +188,10 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state width="2518" height="505" key="GridCell.Tab.3.right/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600339422124" />
+    <state x="-1771" y="359" key="SettingsEditor" timestamp="1600345922370">
+      <screen x="-2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-1771" y="359" key="SettingsEditor/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600345922370" />
     <state x="-1616" y="330" key="run.anything.popup" timestamp="1600339094570">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
