@@ -1,33 +1,39 @@
 ﻿using System;
-using System.Globalization;
-using System.Text.RegularExpressions;
 
 namespace CompleteCSharpMasterclass
 {
     internal class MainClass
     {
+
+        public delegate double Calculate(double x, double y);
+
+        public static double Add(double a, double b)
+        {
+            Console.WriteLine("x+y equals to: " + (a+b));
+            return a + b;
+        }
+        public static double Subtract(double a, double b)
+        {
+            Console.WriteLine("x-y equals to: " + (a-b));
+            return a - b;
+        }
+        public static double Devide(double a, double b)
+        {
+            Console.WriteLine("x/y equals to: " + (a/b));
+            return a/b;
+        }
+        
         private static void Main(string[] args)
         {
-            Shape[] shapeArray = {new Sphere(4), new Cube(3)};
+            Calculate getSum = Add;
+            Calculate getQuotient = Devide;
+            //getSum(5.0,6.0);
+            //getQuotient(4.0, 3.0);
+            Calculate multiCalc = getSum + getQuotient; // because we cannot use Add + Devide - we can combine methods like this.
+            multiCalc += Subtract;//added a method.
+            multiCalc -= getSum;// reduce a delegate.
+            multiCalc(6.0, 8.0);
 
-            foreach (var shape in shapeArray)
-            {
-
-                Console.WriteLine($"\nThis is a {shape.GetInfo()} and it's volume is {shape.GetVolume()}.\n");
-                
-                var aCube = shape as Cube;
-                if (aCube == null)// you could use if (!(shape is Cube)) without applying null to a new shape..
-                {
-                    Console.WriteLine("NO! This Shape is not a cube!");
-                }  
-                if (shape is Cube)
-                {
-                    Console.WriteLine("YES! This Shape is cube!");
-                }
-            }
-            object cube1 = new Cube(7);
-            var cube2 = (Cube) cube1;
-            Console.WriteLine($"\n{cube2.Name} has a volume of {cube2.GetVolume()}");
         }
     }
         
