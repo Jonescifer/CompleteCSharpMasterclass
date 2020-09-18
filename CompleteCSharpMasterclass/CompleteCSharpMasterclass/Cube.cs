@@ -11,10 +11,9 @@ namespace CompleteCSharpMasterclass
             Name = "Cube";
             this.Length = length;
         }
-        public override void GetInfo()
+        public override string GetInfo()
         {
-            base.GetInfo();
-            Console.WriteLine($"\n{Name}'s length is {Length}");
+            return base.GetInfo() + $"\n{Name}'s length is {Length}";
         }
         
         public override double GetVolume()

@@ -12,16 +12,15 @@ namespace CompleteCSharpMasterclass
             this.Radius = radius;
         }
         
-        public override void GetInfo()
+        public override string GetInfo()
         {
-            base.GetInfo();
-            Console.WriteLine($"\nThis sphere has a radius of: {Radius} ");
+            return base.GetInfo() + $"\n{Name}'s radius is {Radius}";
         }
         
         public override double GetVolume()
         {
             
-            return 4 / 3*(Math.PI)*(Math.Pow(Radius, 3));
+            return (4 / 3)*(Math.PI)*(Math.Pow(Radius, 3));
             
         }
     }

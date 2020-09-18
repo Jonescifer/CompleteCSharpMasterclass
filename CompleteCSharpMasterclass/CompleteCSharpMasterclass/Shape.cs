@@ -4,11 +4,11 @@ namespace CompleteCSharpMasterclass
 {
     public abstract class Shape
     {
-        protected string Name { get; set; }
+        public string Name { get; set; }
 
-        public virtual void GetInfo()
+        public virtual string GetInfo()
         {
-            Console.WriteLine($"\nThis is a {Name}");
+            return $"{Name}.";
         }
 
         public abstract double GetVolume();
