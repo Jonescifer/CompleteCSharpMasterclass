@@ -7,7 +7,7 @@ namespace CompleteCSharpMasterclass
 
         public delegate double Calculate(double x, double y);
 
-        public static double Add(double a, double b)
+        public static double Add(double a, double b)  
         {
             Console.WriteLine("x+y equals to: " + (a+b));
             return a + b;
@@ -33,6 +33,7 @@ namespace CompleteCSharpMasterclass
             multiCalc += Subtract;//added a method.
             multiCalc -= getSum;// reduce a delegate.
             multiCalc(6.0, 8.0);
+            
 
         }
     }
