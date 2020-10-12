@@ -1,63 +1,25 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CompleteCSharpMasterclass
 {
-    internal class MainClass
+    class MainClass
     {
-        public delegate string GetTextDelegate(string name);
-
-        public delegate double GetResultDelegate(double a, double b);
+        
         private static void Main(string[] args)
         {
-            // Creating an anonymous method or inline delegate
-            GetTextDelegate getTextDelegate = delegate(string name)
-            {
-                return "\nHello " + name;
-            };
+            var file1 = new File(){Title = "File 1"};// new file created and also set Title property 
+            var downloadHelper = new DownloadHelper();//publisher
+            var unpackService = new UnpackService();//receiver
+            var notificationService = new NotificationService();//receiver
             
-            //exampleof methods that gets an anonymous method as parameter.
-            Display(getTextDelegate);
+            //subscribe 2 classes to FileDownloaded event.
+            downloadHelper.FileDownloaded += unpackService.OnFileDownloaded;
+            downloadHelper.FileDownloaded += notificationService.OnFileDownloaded;
             
-            //Expression Lambda expression.
-            GetTextDelegate getHelloTextDelegate = (string name) => { return "\nHello " + name;};
+            downloadHelper.Download(file1);
             
-            //Statement Lambda expression.
-            GetTextDelegate getGoodbyTextDelegate = (string name) =>
-            {
-                Console.WriteLine("\nI'm inside of a staement lambda.");
-                return "Goodbye " + name;
-            };
-            
-            // Lambda Expression example 1- its the short version of the code we have in line 10 - works without brackets in 'name' because its only ONE VARIABLE.
-            GetTextDelegate getWelcomeTextDelegate = name => "\nWelcome! " + name; 
-            
-            //examples for code in lines: 21-24-31:
-                        Console.WriteLine(getHelloTextDelegate("Paul."));
-                        Console.WriteLine(getGoodbyTextDelegate("Paul."));
-                        Console.WriteLine(getWelcomeTextDelegate("Paul."));
-            //-----------------------------------------------------------------------------------------------------------------------------------------------            
-            
-            // Lambda Expression example 2 
-            GetResultDelegate getSum = (a, b) => a + b;
-            
-            Console.WriteLine(getSum(5.0,9.3));
-            //or with method (like u like it)
-            DisplayNum(getSum);
-
-            GetResultDelegate getProduct = (a, b) => a * b;
-            DisplayNum(getProduct);
         }
-
-        static void DisplayNum(GetResultDelegate getResultDelegate)
-        {
-            Console.WriteLine(getResultDelegate(4.0,2.2));
-        }
-        
-        static void Display(GetTextDelegate getTextDelegate)
-        {
-            Console.WriteLine(getTextDelegate("World."));
-        } 
-        
     }
         
 }
