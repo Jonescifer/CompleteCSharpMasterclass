@@ -23,18 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eaeef53-cc4e-4484-941f-cca931b376a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DownloadHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/File.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileEventArgs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnpackService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CompleteCSharpMasterclass.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompleteCSharpMasterclass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteCSharpMasterclass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DownloadHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/File.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnpackService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CompleteCSharpMasterclass.pdb" afterDir="false" />
     </list>
@@ -62,8 +63,8 @@
         <option value="$PROJECT_DIR$/FileEventArgs.cs" />
         <option value="$PROJECT_DIR$/UnpackService.cs" />
         <option value="$PROJECT_DIR$/NotificationService.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/DownloadHelper.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +121,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600331813290</updated>
       <workItem from="1600331817942" duration="4123000" />
-      <workItem from="1602483432829" duration="11906000" />
+      <workItem from="1602483432829" duration="12416000" />
+      <workItem from="1602503906278" duration="1729000" />
     </task>
     <servers />
   </component>
@@ -145,29 +147,33 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="276" key="GridCell.Tab.0.bottom" timestamp="1602500120097">
+    <state width="1259" height="276" key="GridCell.Tab.0.bottom" timestamp="1602506277339">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="276" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813811" />
-    <state width="1259" height="276" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602500120097" />
+    <state width="1259" height="276" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602506277339" />
+    <state width="1259" height="276" key="GridCell.Tab.0.bottom/0.0.2560.1440/-2560.23.2560.1417@0.0.2560.1440" timestamp="1602501872928" />
     <state width="2518" height="441" key="GridCell.Tab.0.bottom/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516110" />
-    <state width="1259" height="276" key="GridCell.Tab.0.center" timestamp="1602500120096">
+    <state width="1259" height="276" key="GridCell.Tab.0.center" timestamp="1602506277337">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="276" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813810" />
-    <state width="1259" height="276" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602500120096" />
+    <state width="1259" height="276" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602506277337" />
+    <state width="1259" height="276" key="GridCell.Tab.0.center/0.0.2560.1440/-2560.23.2560.1417@0.0.2560.1440" timestamp="1602501872926" />
     <state width="2518" height="441" key="GridCell.Tab.0.center/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
-    <state width="1259" height="276" key="GridCell.Tab.0.left" timestamp="1602500120095">
+    <state width="1259" height="276" key="GridCell.Tab.0.left" timestamp="1602506277336">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="276" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813809" />
-    <state width="1259" height="276" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602500120095" />
+    <state width="1259" height="276" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602506277336" />
+    <state width="1259" height="276" key="GridCell.Tab.0.left/0.0.2560.1440/-2560.23.2560.1417@0.0.2560.1440" timestamp="1602501872925" />
     <state width="2518" height="441" key="GridCell.Tab.0.left/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
-    <state width="1259" height="276" key="GridCell.Tab.0.right" timestamp="1602500120096">
+    <state width="1259" height="276" key="GridCell.Tab.0.right" timestamp="1602506277338">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="276" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1600357813811" />
-    <state width="1259" height="276" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602500120096" />
+    <state width="1259" height="276" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.0.2560.1440@0.0.2560.1440" timestamp="1602506277338" />
+    <state width="1259" height="276" key="GridCell.Tab.0.right/0.0.2560.1440/-2560.23.2560.1417@0.0.2560.1440" timestamp="1602501872927" />
     <state width="2518" height="441" key="GridCell.Tab.0.right/0.23.2560.1359/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1600349516109" />
     <state width="2518" height="505" key="GridCell.Tab.1.bottom" timestamp="1600339422121">
       <screen x="-2560" y="23" width="2560" height="1417" />

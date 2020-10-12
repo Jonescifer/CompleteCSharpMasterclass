@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 
 namespace CompleteCSharpMasterclass
 {
@@ -8,18 +11,21 @@ namespace CompleteCSharpMasterclass
         
         private static void Main(string[] args)
         {
-            var file1 = new File(){Title = "File 1"};// new file created and also set Title property 
-            var downloadHelper = new DownloadHelper();//publisher
-            var unpackService = new UnpackService();//receiver
-            var notificationService = new NotificationService();//receiver
-            
-            //subscribe 2 classes to FileDownloaded event.
-            downloadHelper.FileDownloaded += unpackService.OnFileDownloaded;
-            downloadHelper.FileDownloaded += notificationService.OnFileDownloaded;
-            
-            downloadHelper.Download(file1);
-            
+            int [] numbers = new int[]{1,2,3,4,5,6,7,8,9};
+            OddNumbers(numbers);
         }
+
+        static void OddNumbers(int[] numbers)
+        {
+            Console.WriteLine("Odd Numbers: ");
+            IEnumerable<int> oddNumbersList = from number in numbers where number % 2 != 0 select number;
+            Console.WriteLine(oddNumbersList);
+            foreach (var i in oddNumbersList)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        
     }
         
 }
