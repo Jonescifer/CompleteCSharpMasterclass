@@ -22,3 +22,6 @@
 /Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.csproj.CoreCompileInputs.cache
 /Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.exe
 /Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.pdb
+/Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/bin/Debug/System.Xml.Linq.dll
+/Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/bin/Debug/System.Xml.Linq.pdb
+/Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.csproj.CopyComplete

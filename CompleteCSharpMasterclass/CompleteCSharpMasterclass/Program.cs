@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace CompleteCSharpMasterclass
 {
@@ -11,47 +12,61 @@ namespace CompleteCSharpMasterclass
         
         private static void Main(string[] args)
         {
-            UniversityManager um = new UniversityManager();
-            um.GetMaleStudents();
-            um.GetFemaleStudents();
-            um.SortStudentsByAge();
-            um.AllStudentsFromBeijingTech();
-            um.StudentAndUniversityNameCollection();
-
-            /*
-            //sorting using an IEnumerable.
-            int[] someInts = {30, 12, 4, 3, 12};
-            IEnumerable<int> sortedInts = from i in someInts orderby i select i;
-            //sorting by using method Reverse of IEnumerable.
-            IEnumerable<int> reversedInts = sortedInts.Reverse();
-            foreach (var i in reversedInts)
-            {
-                Console.WriteLine(i);
-            }
+            string studentsXML = 
+                        @"<Students>
+                            <Student>
+                                <Name>Toni</Name>
+                                <Age>21</Age>
+                                <University>Yale</University>
+                                <Semester>1</Semester>
+                            </Student>
+                            <Student>
+                                <Name>Carla</Name>
+                                <Age>17</Age>
+                                <University>Yale</University>
+                                <Semester>4</Semester>
+                            </Student>
+                            <Student>
+                                <Name>Leyla</Name>
+                                <Age>19</Age>
+                                <University>Beijing Tech</University>
+                                <Semester>3</Semester>
+                            </Student>
+                            <Student>
+                                <Name>Frank</Name>
+                                <Age>25</Age>
+                                <University>Beijing Tech</University>
+                                <Semester>10</Semester>
+                            </Student>
+                        </Students>";
             
-            //sorting using 'descending'/'ascending'
-            IEnumerable<int> reversedSortedInts = from i in someInts orderby i descending select i;
-            foreach (var i in reversedSortedInts)
+            XDocument studentsXDocument;
+            studentsXDocument = XDocument.Parse(studentsXML);
+
+            var studentsIe = from student in studentsXDocument.Descendants("Student")
+                select new
+                {
+                    Name = student.Element("Name")?.Value,
+                    Age = student.Element("Age")?.Value,
+                    Univerity = student.Element("University")?.Value,
+                    Semester = student.Element("Semester")?.Value
+                };
+
+            foreach (var student in studentsIe)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Student: {student.Name}; of age {student.Age}; from university {student.Univerity}; semester: {student.Semester}");
             }
+
+            Console.WriteLine();
+            Console.WriteLine("arranged by age:");
             
-            um.GetStudentsFromUni();
-            Console.WriteLine("please enter university id: ");
-            string input = Console.ReadLine();
-            try
+            var sortedStudents = from student in studentsIe orderby student.Age select student;
+            foreach (var student in sortedStudents)
             {
-                int inputAsInt  = Convert.ToInt32(input);
-                um.AllStudentsFromThatUni(inputAsInt);
+                Console.WriteLine($"Student: {student.Name}; of age {student.Age}; from university {student.Univerity}; semester: {student.Semester}");
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-            */
-
-
+                        
+            
         }
     }
 }
