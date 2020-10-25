@@ -2,14 +2,14 @@ using System;
 
 namespace CompleteCSharpMasterclass
 {
-    public class University
+    class University
     {
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public void ShowInfo()
+        public void GetInfo()
         {
-            Console.WriteLine($"University{Name} with ID number: {Id}");
+            Console.WriteLine($"University {Name} with ID {Id}");
         }
     }
 }
