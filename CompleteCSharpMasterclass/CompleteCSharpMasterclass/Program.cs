@@ -37,19 +37,16 @@ namespace CompleteCSharpMasterclass
             }).Start();
             */
             
-            var taskCompletionSource = new TaskCompletionSource<bool>();
-            
-            var thread = new Thread(() =>
-            {
-                Console.WriteLine($"thread number{Thread.CurrentThread.ManagedThreadId} started");
-                Thread.Sleep(5000);
-                taskCompletionSource.TrySetResult(true);
-                Console.WriteLine($"thread number{Thread.CurrentThread.ManagedThreadId} ended");
+            Enumerable.Range (0,1000).ToList().ForEach(f =>
+            { 
+                new Thread(() =>
+                {
+                    Console.WriteLine($"thread number{Thread.CurrentThread.ManagedThreadId} started");
+                    Thread.Sleep(1000);
+                    Console.WriteLine($"thread number{Thread.CurrentThread.ManagedThreadId} ended");
+                }).Start();
             });
             
-            thread.Start();
-            var test = taskCompletionSource.Task.Result;
-            Console.WriteLine($"Task is done: {test}");
         }
     }
 }
