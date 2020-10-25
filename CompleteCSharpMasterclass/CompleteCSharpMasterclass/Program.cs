@@ -3,70 +3,53 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace CompleteCSharpMasterclass
 {
     class MainClass
     {
-        
+
         private static void Main(string[] args)
         {
-            string studentsXML = 
-                        @"<Students>
-                            <Student>
-                                <Name>Toni</Name>
-                                <Age>21</Age>
-                                <University>Yale</University>
-                                <Semester>1</Semester>
-                            </Student>
-                            <Student>
-                                <Name>Carla</Name>
-                                <Age>17</Age>
-                                <University>Yale</University>
-                                <Semester>4</Semester>
-                            </Student>
-                            <Student>
-                                <Name>Leyla</Name>
-                                <Age>19</Age>
-                                <University>Beijing Tech</University>
-                                <Semester>3</Semester>
-                            </Student>
-                            <Student>
-                                <Name>Frank</Name>
-                                <Age>25</Age>
-                                <University>Beijing Tech</University>
-                                <Semester>10</Semester>
-                            </Student>
-                        </Students>";
-            
-            XDocument studentsXDocument;
-            studentsXDocument = XDocument.Parse(studentsXML);
-
-            var studentsIe = from student in studentsXDocument.Descendants("Student")
-                select new
-                {
-                    Name = student.Element("Name")?.Value,
-                    Age = student.Element("Age")?.Value,
-                    Univerity = student.Element("University")?.Value,
-                    Semester = student.Element("Semester")?.Value
-                };
-
-            foreach (var student in studentsIe)
+            /*
+            new Thread (() =>
             {
-                Console.WriteLine($"Student: {student.Name}; of age {student.Age}; from university {student.Univerity}; semester: {student.Semester}");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("arranged by age:");
-            
-            var sortedStudents = from student in studentsIe orderby student.Age select student;
-            foreach (var student in sortedStudents)
+                Thread.Sleep(1000);
+                Console.WriteLine("Thread 1");
+            }).Start();
+            new Thread (() =>
             {
-                Console.WriteLine($"Student: {student.Name}; of age {student.Age}; from university {student.Univerity}; semester: {student.Semester}");
-            }
-                        
+                Thread.Sleep(1000);
+                Console.WriteLine("Thread 2");
+            }).Start();
+            new Thread (() =>
+            {
+                Thread.Sleep(1000);
+                Console.WriteLine("Thread 3");
+            }).Start();
+            new Thread (() =>
+            {
+                Thread.Sleep(1000);
+                Console.WriteLine("Thread 4");
+            }).Start();
+            */
             
+            var taskCompletionSource = new TaskCompletionSource<bool>();
+            
+            var thread = new Thread(() =>
+            {
+                Console.WriteLine($"thread number{Thread.CurrentThread.ManagedThreadId} started");
+                Thread.Sleep(5000);
+                taskCompletionSource.TrySetResult(true);
+                Console.WriteLine($"thread number{Thread.CurrentThread.ManagedThreadId} ended");
+            });
+            
+            thread.Start();
+            var test = taskCompletionSource.Task.Result;
+            Console.WriteLine($"Task is done: {test}");
         }
     }
 }
