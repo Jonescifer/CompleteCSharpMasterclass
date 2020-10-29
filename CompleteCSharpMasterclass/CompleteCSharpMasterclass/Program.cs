@@ -24,7 +24,7 @@ namespace CompleteCSharpMasterclass
                     try
                     {
                         Console.WriteLine($"Thread number: {Thread.CurrentThread.ManagedThreadId} started");
-                        //Thread.Sleep(1000);
+                        Thread.Sleep(1000);
                         Console.WriteLine($"Thread number: {Thread.CurrentThread.ManagedThreadId} ended");
                     }
                     catch (Exception e)
@@ -35,6 +35,7 @@ namespace CompleteCSharpMasterclass
                 });
             });
             Console.WriteLine("Ended");
+            //Console.ReadLine();
         }
     }
 }
