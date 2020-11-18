@@ -9,35 +9,34 @@ namespace CompleteCSharpMasterclass
 
         private static void Main(string[] args)
         {
-            new Thread(() =>
-            {
-                Thread.Sleep(1000);
-                Console.WriteLine("Thread X");
-            }){IsBackground = true}.Start();
+            //main thread started
+            Console.WriteLine("Main Thread started");
+            //initialize two threads and adding the function methods as DELEGATES.. they dot have parenthesis..
+            var thread1 = new Thread(Thread1Function);
+            var thread2 = new Thread(Thread2Function);
+            //execute the threads.
+            thread1.Start();
+            thread2.Start(); 
+            //block Main thread from stopping while this thread runs!!!!!(Blocks the calling thread until the thread represented by this instance terminates.)
+            thread1.Join();
+            Console.WriteLine("Thread1Function ended");
+            //block Main thread from stopping while this thread runs!!!!!
+            thread2.Join();
+            Console.WriteLine("Thread2Function ended");
             
-            Console.WriteLine("Started");
-            Enumerable.Range (0,1000).ToList().ForEach(f =>
-            {
-                Console.WriteLine($"loop: {f}");
-                ThreadPool.QueueUserWorkItem((o) =>
-                {
-                    try
-                    {
-                        Console.WriteLine($"Thread number: {Thread.CurrentThread.ManagedThreadId} started");
-                        Thread.Sleep(1000);
-                        Console.WriteLine($"Thread number: {Thread.CurrentThread.ManagedThreadId} ended");
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e);
-                        throw;
-                    }
-                });
-            });
-            Console.WriteLine("Ended");
-            //Console.ReadLine();
+            Console.WriteLine("Main Thread ended"); //Main threads ends.. no more line of code..
         }
-    }
+
+        public static void Thread1Function()
+        {
+            Console.WriteLine("Thread1Function started");
+            Thread.Sleep(3000);
+        }
+        public static void Thread2Function()
+        {
+            Console.WriteLine("Thread2Function started");
+        }
+}
 }
 
 

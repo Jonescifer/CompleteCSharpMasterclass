@@ -25,3 +25,6 @@
 /Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/bin/Debug/System.Xml.Linq.dll
 /Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/bin/Debug/System.Xml.Linq.pdb
 /Volumes/Stone_SSD/Projects/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.csproj.CopyComplete
+/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/bin/Debug/System.Xml.Linq.dll
+/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/bin/Debug/System.Xml.Linq.pdb
+/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/CompleteCSharpMasterclass/obj/Debug/CompleteCSharpMasterclass.csproj.CopyComplete
