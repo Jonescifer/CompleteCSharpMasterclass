@@ -549,7 +549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Go to Level 1
 --- !u!222 &1308061192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ RectTransform:
   m_GameObject: {fileID: 1856377412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1308061190}
   m_Father: {fileID: 2067495341}
@@ -732,7 +732,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1856377415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1856377417}
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1856377415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,7 +792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ed5b17ef5e04adbb7661efadbb732d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1308061191}
 --- !u!1 &2067495340
 GameObject:
   m_ObjectHideFlags: 0
