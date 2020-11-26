@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ButtonBehaviour.cs" />
-     <Compile Include="Assets\ButtonBehaviour_Level1.cs" />
      <Compile Include="Assets\TextBehaviour.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/_Unity/Pong/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonBehaviour : MonoBehaviour
 {
-    public void OnButtonPressed()
+    public void MoveToScene(int sceneID)
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene(sceneID);
     }
 }
