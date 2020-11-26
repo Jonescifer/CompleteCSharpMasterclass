@@ -20,34 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8c3e1a-9440-4c02-8b50-48b57a401c79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity Basics/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity Basics/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity Basics/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity Basics/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity Basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity Basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MAT_Plane.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MAT_Plane.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MAT_Sphere.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MAT_Sphere.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/42a341-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/42a341-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/c39944-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/c39944-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/27/278fa1f11d6fa4e1dad5273c5c973cb8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/27/278fa1f11d6fa4e1dad5273c5c973cb8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/77/77e0bdb9a86f248a38d6e7c4fca4d579" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/77/77e0bdb9a86f248a38d6e7c4fca4d579" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/9f/9fc0d4010bbf28b4594072e72b8655ab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/9f/9fc0d4010bbf28b4594072e72b8655ab.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a5/a55296adef79a426fb85bb49be887e39" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a5/a55296adef79a426fb85bb49be887e39" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a6/a60308c41346a482e9e10e5b26ad9bfd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a6/a60308c41346a482e9e10e5b26ad9bfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a6/a60308c41346a482e9e10e5b26ad9bfd.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a6/a60308c41346a482e9e10e5b26ad9bfd.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d0/d0bacda5c3d2f44f084d227c150b6405" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d0/d0bacda5c3d2f44f084d227c150b6405" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d0/d0bacda5c3d2f44f084d227c150b6405.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d0/d0bacda5c3d2f44f084d227c150b6405.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +42,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DAD1ACC5-FBA3-49A0-A8D8-E78BE26ED442/1f/774bb4ef/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DAD1ACC5-FBA3-49A0-A8D8-E78BE26ED442/f1/75e04426/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -66,6 +50,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/TriggerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" />
       </list>
     </option>
@@ -87,6 +72,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -121,6 +107,7 @@
       <workItem from="1606377680428" duration="335000" />
       <workItem from="1606378335138" duration="1807000" />
       <workItem from="1606386939715" duration="400000" />
+      <workItem from="1606390055520" duration="1166000" />
     </task>
     <servers />
   </component>
@@ -145,6 +132,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1003" y="537" key="#Notifications" timestamp="1606390475528">
+      <screen x="0" y="23" width="2560" height="1364" />
+    </state>
+    <state x="1003" y="537" key="#Notifications/0.23.2560.1364/2560.23.1920.1177@0.23.2560.1364" timestamp="1606390475528" />
+    <state x="781" y="344" key="SettingsEditor" timestamp="1606390295992">
+      <screen x="0" y="23" width="2560" height="1364" />
+    </state>
+    <state x="781" y="344" key="SettingsEditor/0.23.2560.1364/2560.23.1920.1177@0.23.2560.1364" timestamp="1606390295992" />
     <state x="100" y="123" width="2360" height="1164" key="VCS.FileHistoryDialog" timestamp="1606378705831">
       <screen x="0" y="23" width="2560" height="1364" />
     </state>
