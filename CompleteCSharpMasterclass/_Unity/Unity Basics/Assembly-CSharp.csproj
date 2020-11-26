@@ -56,7 +56,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\TriggerScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/_Unity/Unity Basics/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
