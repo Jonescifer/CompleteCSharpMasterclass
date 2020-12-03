@@ -20,18 +20,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d07b5adc-86c3-4b2d-88f1-47dd5d6ada18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/SoundBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/With love from Vertex Studio (1).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/With love from Vertex Studio (1).mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SoundBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SoundBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TextBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TextBehaviour.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pong/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pong/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game_music.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game_music/With love from Vertex Studio (1).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game_music/With love from Vertex Studio (1).mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SoundBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SoundBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/42a341-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/42a341-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/c39944-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/c39944-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/24/24663469237074055ab68cc2ebede7c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/24/24663469237074055ab68cc2ebede7c5.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/37/37f4c4f73f26444879996f108b6a75b5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/37/37f4c4f73f26444879996f108b6a75b5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/37/37f4c4f73f26444879996f108b6a75b5.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/37/37f4c4f73f26444879996f108b6a75b5.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3c/3c170c9096ba3bd4c8283600069713f5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3c/3c170c9096ba3bd4c8283600069713f5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/84/8439b51310800417ea07b366c53dc7f9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/84/8439b51310800417ea07b366c53dc7f9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/84/8439b51310800417ea07b366c53dc7f9.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/84/8439b51310800417ea07b366c53dc7f9.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c6/c6ed5b17ef5e04adbb7661efadbb732d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c6/c6ed5b17ef5e04adbb7661efadbb732d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c6/c6ed5b17ef5e04adbb7661efadbb732d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c6/c6ed5b17ef5e04adbb7661efadbb732d.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f4/f48084b6308be4e728857f85dcf4de0d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f4/f48084b6308be4e728857f85dcf4de0d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f4/f48084b6308be4e728857f85dcf4de0d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f4/f48084b6308be4e728857f85dcf4de0d.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +81,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/SoundBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ButtonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35B11674-2FBF-4022-A981-AA51C75CBBAF/c3/9ff1600c/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DAD1ACC5-FBA3-49A0-A8D8-E78BE26ED442/e4/957daa73/KeyCode.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,6 +93,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/ButtonBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/ButtonBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/SoundBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/TextBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TextBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -76,7 +120,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -108,6 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606397898030</updated>
       <workItem from="1606397928377" duration="4304000" />
+      <workItem from="1606976524572" duration="4296000" />
     </task>
     <servers />
   </component>
@@ -126,6 +171,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -136,9 +182,10 @@
       <screen x="0" y="23" width="2560" height="1364" />
     </state>
     <state x="1021" y="436" key="RiderGenerateDialog/0.23.2560.1364/2560.23.1920.1177@0.23.2560.1364" timestamp="1606402538856" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1606398621379">
-      <screen x="0" y="23" width="2560" height="1364" />
+    <state x="781" y="339" key="SettingsEditor" timestamp="1606980804787">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="781" y="339" key="SettingsEditor/0.0.2560.1440/2560.0.1920.1200@0.0.2560.1440" timestamp="1606980804787" />
     <state x="781" y="344" key="SettingsEditor/0.23.2560.1364/2560.23.1920.1177@0.23.2560.1364" timestamp="1606398621379" />
   </component>
 </project>

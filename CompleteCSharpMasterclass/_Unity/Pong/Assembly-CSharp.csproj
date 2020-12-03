@@ -56,9 +56,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ButtonBehaviour.cs" />
-     <Compile Include="Assets\SoundBehaviour.cs" />
-     <Compile Include="Assets\TextBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ButtonBehaviour.cs" />
+     <Compile Include="Assets\Scripts\SoundBehaviour.cs" />
+     <Compile Include="Assets\Scripts\TextBehaviour.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/_Unity/Pong/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
