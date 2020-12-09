@@ -14,14 +14,15 @@ public class BallMovement : MonoBehaviour
     
     void Start()
     {
-        StartCoroutine(this.StartBall());
+        StartCoroutine(this.StartBall());// start a coroutine of StartBall
         Debug.Log("Started Coroutine!");
+        Debug.Log(_hitCounter.ToString());
     }
 
     public IEnumerator StartBall(bool isStartPlayer1 = true)
     {
-        this._hitCounter = 0;
-        yield return new WaitForSeconds(2);//wait for 2 seconds
+        this._hitCounter = 0;//reset hitCounter.
+        yield return new WaitForSeconds(1);//wait for 1 seconds
 
         if (isStartPlayer1)
         {
@@ -35,15 +36,15 @@ public class BallMovement : MonoBehaviour
         }
     }
     
-    public void MoveBall(Vector2 dirVector2)
+    public void MoveBall(Vector2 dir)
     {
-        dirVector2 = dirVector2.normalized; // normalize the direction.
+        dir = dir.normalized; // normalize the direction.
         
         float speed = this.movementSpeed + (this._hitCounter * this.extraSpeedPerHit);// defining speed.
-        
+
         Rigidbody2D rigidbody2D = this.gameObject.GetComponent<Rigidbody2D>(); //assigning the component of this game object to a variable rigidBody2D.
         
-        rigidbody2D.velocity = dirVector2 * speed; //assigning to velocity direction times speed.
+        rigidbody2D.velocity = dir * speed; //assigning to velocity direction times speed.
         
     }
 
