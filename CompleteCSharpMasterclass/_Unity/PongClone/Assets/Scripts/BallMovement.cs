@@ -16,7 +16,6 @@ public class BallMovement : MonoBehaviour
     {
         StartCoroutine(this.StartBall());// start a coroutine of StartBall
         Debug.Log("Started Coroutine!");
-        Debug.Log(_hitCounter.ToString());
     }
 
     public IEnumerator StartBall(bool isStartPlayer1 = true)
@@ -53,6 +52,7 @@ public class BallMovement : MonoBehaviour
         if (this._hitCounter * this.extraSpeedPerHit < this.maximumSpeed)
         {
             _hitCounter++;
+            Debug.Log(_hitCounter.ToString());
         }
     }
 }

@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BallMovement.cs" t="Include" />
+          <e p="CollisionController.cs" t="Include" />
           <e p="PlayButton.cs" t="Include" />
           <e p="RacketPlayer1.cs" t="Include" />
           <e p="RacketPlayer2.cs" t="Include" />
