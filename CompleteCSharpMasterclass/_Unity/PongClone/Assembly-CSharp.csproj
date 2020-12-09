@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\RacketPlayer1.cs" />
      <Compile Include="Assets\Scripts\RacketPlayer2.cs" />
      <Compile Include="Assets\Scripts\ScoreController.cs" />
+     <Compile Include="Assets\Scripts\SoundController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/External_SSD_248G/Unity/_GIT_/CompleteCSharpMasterclass/CompleteCSharpMasterclass/_Unity/PongClone/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
