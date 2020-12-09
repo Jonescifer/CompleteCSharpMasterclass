@@ -12,6 +12,7 @@
           <e p="PlayButton.cs" t="Include" />
           <e p="RacketPlayer1.cs" t="Include" />
           <e p="RacketPlayer2.cs" t="Include" />
+          <e p="RacketPlayer2AI.cs" t="Include" />
           <e p="ScoreController.cs" t="Include" />
           <e p="SoundController.cs" t="Include" />
         </e>
