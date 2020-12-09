@@ -7,14 +7,24 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="BallMovement.cs" t="Include" />
-          <e p="CollisionController.cs" t="Include" />
-          <e p="PlayButton.cs" t="Include" />
-          <e p="RacketPlayer1.cs" t="Include" />
-          <e p="RacketPlayer2.cs" t="Include" />
-          <e p="RacketPlayer2AI.cs" t="Include" />
-          <e p="ScoreController.cs" t="Include" />
-          <e p="SoundController.cs" t="Include" />
+          <e p="BallCollisionController.cs" t="Include" />
+          <e p="BallController.cs" t="Include" />
+          <e p="BallSoundController.cs" t="Include" />
+          <e p="ButtonNavigate.cs" t="Include" />
+          <e p="Denis's" t="Include">
+            <e p="BallMovement.cs" t="Include" />
+            <e p="CollisionController.cs" t="Include" />
+            <e p="PlayButton.cs" t="Include" />
+            <e p="RacketPlayer1.cs" t="Include" />
+            <e p="RacketPlayer2.cs" t="Include" />
+            <e p="RacketPlayer2AI.cs" t="Include" />
+            <e p="ScoreController.cs" t="Include" />
+            <e p="SoundController.cs" t="Include" />
+          </e>
+          <e p="FieldScoreController.cs" t="Include" />
+          <e p="RacketConroller1.cs" t="Include" />
+          <e p="RacketContollerAI.cs" t="Include" />
+          <e p="RacketController2.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

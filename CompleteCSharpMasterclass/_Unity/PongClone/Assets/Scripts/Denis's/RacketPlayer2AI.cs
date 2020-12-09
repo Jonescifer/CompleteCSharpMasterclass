@@ -8,17 +8,16 @@ public class RacketPlayer2AI : MonoBehaviour
 {
     public float movementSpeed = 200;
     public GameObject ball;
-
-    // Update is called once per frame
-    private void FixedUpdate()
+    
+    private void FixedUpdate()// Update is called once per frame
     {
-        if (Mathf.Abs(this.transform.position.y - ball.transform.position.y) > 50)
+        if(Mathf.Abs(transform.position.y - ball.transform.position.y) > 50)
         {
-            if (this.transform.position.y > ball.transform.position.y)
+            if (transform.position.y > ball.transform.position.y)
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(0,-1)* movementSpeed;
             }
-            else if(this.transform.position.y < ball.transform.position.y)
+            else if(transform.position.y < ball.transform.position.y)
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(0,1)* movementSpeed; 
             }
