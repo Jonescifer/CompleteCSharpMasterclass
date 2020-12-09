@@ -18,12 +18,26 @@ public class BallMovement : MonoBehaviour
         Debug.Log("Started Coroutine!");
     }
 
-    public IEnumerator StartBall(bool isStartPlayer1 = true)
+    public void PositionBall(bool isStartingPlayer1)
+    {
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);//reset velocity.
+        if (isStartingPlayer1)
+        {
+            this.transform.localPosition = new Vector3(-100,0,0);
+        }
+        else
+        {
+            this.transform.localPosition = new Vector3(100,0,0);
+        }
+    }
+    public IEnumerator StartBall(bool isStartingPlayer1 = true)
     {
         this._hitCounter = 0;//reset hitCounter.
+        this.PositionBall(isStartingPlayer1);
+        
         yield return new WaitForSeconds(1);//wait for 1 seconds
 
-        if (isStartPlayer1)
+        if (isStartingPlayer1)
         {
             this.MoveBall(new Vector2(-1,0));
             Debug.Log("player 1 is true (default)!");

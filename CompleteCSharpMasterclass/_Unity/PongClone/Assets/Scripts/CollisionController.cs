@@ -35,16 +35,19 @@ public class CollisionController : MonoBehaviour
     {
         if (other.gameObject.name == "RacketPlayer1" || other.gameObject.name == "RacketPlayer2")
         {
-            this.BounceFromRacket(other);
+            this.BounceFromRacket(other); // method of bounce the ball! continue play...
         }
-        else if(other.gameObject.name == "WallLeft" )
+        else if (other.gameObject.name == "WallLeft") // if scored a goal!
         {
             Debug.Log("Collision with wall left");
-            scoreController.GoalPlayer2();
-        }else if(other.gameObject.name == "WallRight" )
+            scoreController.GoalPlayer2(); //update score
+            StartCoroutine(this.ballMovement.StartBall(true)); //start game again - coroutine...
+        }
+        else if (other.gameObject.name == "WallRight") // if scored a goal!
         {
-            scoreController.GoalPlayer1();
+            scoreController.GoalPlayer1(); //update score
             Debug.Log("Collision with wall right");
+            StartCoroutine(this.ballMovement.StartBall(false)); //start game again - coroutine...
         }
     }
 }
