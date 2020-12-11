@@ -174,8 +174,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BallSoundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Denis's/RacketPlayer2AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RacketContollerAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallCollisionController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
       </list>
     </option>
   </component>
