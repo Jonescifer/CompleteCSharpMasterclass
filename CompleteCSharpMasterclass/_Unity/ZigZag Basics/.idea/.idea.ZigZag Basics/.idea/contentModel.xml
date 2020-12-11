@@ -6,6 +6,7 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CheckForObjects.cs" t="Include" />
         <e p="InstantiateCubes.cs" t="Include" />
         <e p="SavingData.cs" t="Include" />
       </e>
