@@ -8,20 +8,28 @@ public class CheckForObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (Physics.Raycast(transform.position, Vector3.down, out _raycastHit, 100))
-        // {
-        //     print($"we hit {_raycastHit.collider.name} at distance {_raycastHit.distance}");
-        // }
-        // else
-        // {
-        //     print("we hit nothing");
-        // }private Ray _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit _raycastHit;
-        Ray _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(_ray, out _raycastHit,100))
+        RaycastHit hit;
+        
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 100))
         {
-            print($"we hit {_raycastHit.collider.name}");
+            print($"we hit a {hit.collider.gameObject.name} at distance of {hit.distance}.");
         }
+        else
+        {
+            print("nothing underneath us");
+        }
+        
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            print($"we hit a {hit.transform.name} at distance of {hit.distance}.");
+        }
+
+        else
+        {
+            print("nothing underneath us");
+        }
+            
     }
 }

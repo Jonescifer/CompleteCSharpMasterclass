@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SavingData : MonoBehaviour
 {
-    private int _numberCounter = 0;
+    private int _number = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +17,12 @@ public class SavingData : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            _numberCounter++;
-            if (_numberCounter >= GetNumber())
+            _number++;
+            if (_number > GetNumber())
             {
-                PlayerPrefs.SetInt("score",_numberCounter);
+                PlayerPrefs.SetInt("score",_number);
             }
-            Debug.Log($"the Number is {_numberCounter}");
+            Debug.Log($"the Number is {_number}");
         }
     }
 

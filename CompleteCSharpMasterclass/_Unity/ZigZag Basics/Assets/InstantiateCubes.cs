@@ -9,7 +9,8 @@ public class InstantiateCubes : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("CreateNewCube", 0,1);
+        InvokeRepeating("CreateNewCube", 0,0.1f);
+        Invoke("CreateNewCube", 5);
     }
 
     public void CreateNewCube()
