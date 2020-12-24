@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class FollowCam : MonoBehaviour
 {
-    public Transform target;
-    private Vector3 m_offset;
+    public Transform _target;
+    private Vector3 _offsetVector3;
     private void Awake()
     {
-        m_offset = transform.position - target.position;
+        _offsetVector3 = transform.position - _target.transform.position;
     }
 
     private void LateUpdate()
     {
-        transform.position = target.position + m_offset;
+        transform.position = _target.transform.position + _offsetVector3;
     }
 }
