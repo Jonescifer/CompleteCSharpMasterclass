@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 public class CharController : MonoBehaviour
@@ -18,7 +19,8 @@ public class CharController : MonoBehaviour
     //GameMenager
     private GameManager _gameManager;
 
-    public GameObject CrystalEffect;
+    //Particle Effect
+    public GameObject crystalEffect;
     
 
     private void Awake()
@@ -71,11 +73,15 @@ public class CharController : MonoBehaviour
         {
             _animator.SetTrigger("isFalling");
         }
+        else
+        {
+            _animator.SetTrigger("isNotFalling");
+        }
         
         //check if player has fallen and end Game.
         if (transform.position.y < -2)
         {
-            GameManager.EndGame();
+            _gameManager.EndGame();
         }
     }
 
@@ -102,12 +108,12 @@ public class CharController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Crystal")
+        if (other.CompareTag("Crystal"))
         {
             _gameManager.IncreaseScore();
             
-            GameObject g = Instantiate(CrystalEffect, rayStart.transform.position,Quaternion.identity);
-            Destroy(g,2);
+            GameObject g = Instantiate(crystalEffect, rayStart.transform.position,Quaternion.identity);
+            Destroy(g,1);
             Destroy(other.gameObject);
         }
     }

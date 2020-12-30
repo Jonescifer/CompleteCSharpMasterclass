@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class BackgroundLoop : MonoBehaviour
 {
-    public static BackgroundLoop _InstanceBackgroundLoop;
+    private static BackgroundLoop _instanceBackgroundLoop;
     private void Awake()
     {
-        if (_InstanceBackgroundLoop == null)
+        //destroy the instance that is created after the first game loss..
+        if (_instanceBackgroundLoop == null)
         {
-            _InstanceBackgroundLoop = this;
-        }else if (_InstanceBackgroundLoop!= this)
+            _instanceBackgroundLoop = this;
+        }else if (_instanceBackgroundLoop!= this)
         {
          Destroy(gameObject);   
         }
