@@ -20,22 +20,22 @@ public class Fruit : MonoBehaviour
 
     public void CreateSlicedFruit()
     {
-        //instantiate the slice fruit prefab at the fruit's position.
-        GameObject inst = (GameObject)Instantiate(slicedFruit, transform.position, transform.rotation);
+        Debug.Log($"Touched: {gameObject.name}!");
+        GameObject instSlicedFruit = Instantiate(slicedFruit, transform.position, transform.rotation);//instantiate the GAME OBJECT the slice fruit prefab at the fruit's position.
         
-        //Create rigidbody array - get componentS 
-        Rigidbody[] rbOnSliced = inst.transform.GetComponentsInChildren<Rigidbody>();
-
-        foreach (var r in rbOnSliced)
+        Rigidbody[] rbsOnSliced = instSlicedFruit.transform.GetComponentsInChildren<Rigidbody>();//Create rigidbody array - get componentS 
+        
+        foreach (var r in rbsOnSliced)// add explosion force to the children .
         {
             r.transform.rotation = Random.rotation;
-            r.AddExplosionForce(Random.Range(500,1000),transform.position,5f);
+            r.AddExplosionForce(Random.Range(500, 1000), transform.position, 5f);
         }
         
-        //destroy the fruit
-        Destroy(gameObject);
-        Destroy(inst.gameObject,5);
+        FindObjectOfType<GameManager>().IncreaseScore(3);//increase the score! 
         
+        Destroy(gameObject);//destroy the fruit - when exploded.
+        Destroy(instSlicedFruit.gameObject, 3);//destroy the cut fruit. so it doesnt live forever.
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,6 +46,7 @@ public class Fruit : MonoBehaviour
         {
             return;
         }
+
         CreateSlicedFruit();
     }
 }

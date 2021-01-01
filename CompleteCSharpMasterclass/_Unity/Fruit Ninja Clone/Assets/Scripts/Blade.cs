@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Blade : MonoBehaviour
 {
-    private Rigidbody2D _rigidbody2D;
+    private Rigidbody2D _rb2D;
 
     private void Awake()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _rb2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -22,8 +22,12 @@ public class Blade : MonoBehaviour
         if (!(Camera.main is null))
         {
             var mousePos = Input.mousePosition;
-            mousePos.z = 10; //distance of 10 units from the camera.
-            _rigidbody2D.position = Camera.main.ScreenToWorldPoint(mousePos);
+            mousePos.z = 10; //distance of 10 units from the camera.the fix for  the camera being 10 units back..
+            _rb2D.position = Camera.main.ScreenToWorldPoint(mousePos);
+        }
+        else
+        {
+            throw new Exception("No Camera in scene");
         }
     }
 }
