@@ -35,8 +35,10 @@ public class Fruit : MonoBehaviour
         
         FindObjectOfType<GameManager>().IncreaseScore(3);//increase the score! 
         
+        FindObjectOfType<GameManager>().PlayRandomSliceSound();//play slash sound!
         Destroy(gameObject);//destroy the fruit - when exploded.
         Destroy(instSlicedFruit.gameObject, 3);//destroy the cut fruit. so it doesnt live forever.
+        
 
     }
 

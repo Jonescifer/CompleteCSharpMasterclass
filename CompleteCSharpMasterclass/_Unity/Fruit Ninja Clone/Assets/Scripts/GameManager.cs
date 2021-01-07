@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
+using Random = UnityEngine.Random;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -19,10 +22,16 @@ public class GameManager : MonoBehaviour
     public Text gameOverPanelScoreText;
     public Text gameOverPanelHighScoreText;
 
+    [Header("Sounds")] 
+    public AudioClip bombSound;
+    public AudioClip[] sliceSounds;
+    private AudioSource _audioSource;
+
     private void Awake()
-    { 
+    {
         gameOverPanel.SetActive(false);
         GetHighscore();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void GetHighscore()
@@ -45,6 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void OnBombHit()
     {
+        _audioSource.PlayOneShot(bombSound);
         Time.timeScale = 0;
         gameOverPanel.SetActive(true);
         gameOverPanelScoreText.text = "Score: " + _score.ToString();
@@ -73,8 +83,14 @@ public class GameManager : MonoBehaviour
         
     }
     public void ResetHighScore()
-         {
+    {
              PlayerPrefs.SetInt("Highscore",0);
              highScoreText.text = "Best: " + PlayerPrefs.GetInt("Highscore");
-         }
+    }
+
+    public void PlayRandomSliceSound()
+    {
+        AudioClip randomSound = sliceSounds[Random.Range(0, sliceSounds.Length)];
+        _audioSource.PlayOneShot(randomSound);
+    }
 }
