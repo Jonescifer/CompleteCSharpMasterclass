@@ -6,9 +6,12 @@ using UnityEngine;
 public class Blade : MonoBehaviour
 {
     private Rigidbody2D _rb2D;
+    private Camera _cameraMain;
+
 
     private void Awake()
     {
+        _cameraMain = Camera.main;
         _rb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -19,11 +22,12 @@ public class Blade : MonoBehaviour
 
     private void SetBladeToMouse()
     {
-        if (!(Camera.main is null))
+        
+        if (!(_cameraMain is null))
         {
             var mousePos = Input.mousePosition;
-            mousePos.z = 10; //distance of 10 units from the camera.the fix for  the camera being 10 units back..
-            _rb2D.position = Camera.main.ScreenToWorldPoint(mousePos);
+            mousePos.z = 10; //distance of 10 units from the camera.the fix for  the camera being -10.
+            _rb2D.position = _cameraMain.ScreenToWorldPoint(mousePos);
         }
         else
         {

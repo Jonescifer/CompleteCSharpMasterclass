@@ -20,8 +20,10 @@ public class Fruit : MonoBehaviour
 
     public void CreateSlicedFruit()
     {
-        Debug.Log($"Touched: {gameObject.name}!");
-        GameObject instSlicedFruit = Instantiate(slicedFruit, transform.position, transform.rotation);//instantiate the GAME OBJECT the slice fruit prefab at the fruit's position.
+        Debug.Log($"Touched: {gameObject.name}!");// tell me which fruit i triggered..
+        
+        var transformInst = transform;
+        GameObject instSlicedFruit = Instantiate(slicedFruit, transformInst.position, transformInst.rotation);//instantiate the GAME OBJECT the slice fruit prefab at the fruit's position.
         
         Rigidbody[] rbsOnSliced = instSlicedFruit.transform.GetComponentsInChildren<Rigidbody>();//Create rigidbody array - get componentS 
         
